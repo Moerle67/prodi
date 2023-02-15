@@ -1,3 +1,10 @@
+
 from django.contrib import admin
 
-# Register your models here.
+from .models import *
+
+admin.site.register(Fachrichtung)
+admin.site.register(Kontakt)
+admin.site.register(Dokument)
+admin.site.register(Organisation)
+admin.site.register(Reha)
