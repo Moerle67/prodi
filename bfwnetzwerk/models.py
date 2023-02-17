@@ -40,10 +40,31 @@ class Organisation(models.Model):
         verbose_name_plural = "Organisationen"
         verbose_name = "Organisation"
 
+class Schlagwort(models.Model):
+    schlagwort = models.CharField(verbose_name=("Schlagwort"), max_length=50, unique=True)
+    def __str__(self):
+        return f"{self.schlagwort}"
+    class Meta:
+        verbose_name_plural = "Schlagwort"
+        verbose_name = "Schlagworte"
+        ordering = ['schlagwort']
+
+class Kostentraeger(models.Model):
+    kostentraeger = models.CharField(verbose_name=("Geschäftsfeld/Kostenträger"), max_length=250)
+    ansprechpartner = models.ForeignKey(Kontakt, verbose_name=("Ansprechpartner"), on_delete=models.CASCADE)
+    def __str__(self):
+        return f"{self.kostentraeger}"
+    class Meta:
+        verbose_name_plural = "Kostenträger"
+        verbose_name = "Kostenträger"
+        ordering = ['kostentraeger']
+
 class Reha(models.Model):
     massnahmentitel = models.TextField(verbose_name=("Maßnahmentitel"))
     fachrichtung = models.ForeignKey(Fachrichtung, verbose_name=("Fachrrichtung"), on_delete=models.CASCADE)
     schlagrichtung = models.TextField(verbose_name=("inhalt. Schlagrichtung"))
+    schlagwort = models.ManyToManyField(Schlagwort, verbose_name=("Schlagwort"))
+    kostentraeger = models.ForeignKey(Kostentraeger, verbose_name=("Geschäftfeld/Kostenträger"), on_delete=models.CASCADE)
     status = models.BooleanField(verbose_name=("Status"))
     dokumente = models.ForeignKey(Dokument, verbose_name=("Dokumente"), on_delete=models.CASCADE)
     verantwortlicher = models.ForeignKey(Kontakt, verbose_name=("Maßnahmenverantwortlicher"), on_delete=models.CASCADE)
@@ -53,29 +74,5 @@ class Reha(models.Model):
     class Meta:
         verbose_name_plural = "Rehas"
         verbose_name = "Reha"
-
-class Schlagwort(models.Model):
-    schlagwort = models.CharField(verbose_name=("Schlagwort"), max_length=50)
-    def __str__(self):
-        return f"{self.schlagwort}"
-    class Meta:
-        verbose_name_plural = "Schlagwort"
-        verbose_name = "Schlagworte"
-        ordering = ['schlagwort']
-
-class SchlagwortReha(models.Model):
-    reha = models.ForeignKey(Reha, verbose_name=("Reha"), on_delete=models.CASCADE)
-    schlagwort = models.ForeignKey(Schlagwort, verbose_name=("SSchlagwort/Reha"), on_delete=models.CASCADE)
-
-    class Meta:
-        verbose_name = ("Schlagwort/Reha")
-        verbose_name_plural = ("Schlagworter/Reha")
-        ordering = ['reha']
-
-    def __str__(self):
-        return f"{self.schlagwort}/{self.reha}"
-
-    def get_absolute_url(self):
-        return reverse("_detail", kwargs={"pk": self.pk})
 
 
