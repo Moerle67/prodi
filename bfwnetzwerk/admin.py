@@ -11,6 +11,6 @@ admin.site.register(Kostentraeger)
 @admin.register(Reha)
 class RehaAdmin(admin.ModelAdmin):
     list_display = ['massnahmentitel', 'fachrichtung', 'organisation', 'verantwortlicher', ]
-    search_fields = ['massnahmentitel', 'schlagrichtung', 'schlagwort']
-    list_filter = ['schlagwort',]
+    search_fields = ['massnahmentitel', 'schlagrichtung']
+    list_filter = ['schlagwort','kostentraeger']
 admin.site.register(Schlagwort)
