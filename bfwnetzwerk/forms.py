@@ -20,3 +20,7 @@ class NameForm(MyBaseForm):
     s_woerter = Schlagwort.objects.all()
     schlagwort = forms.ChoiceField(choices=MyBaseForm.liste(s_woerter), label="Wert")
     your_pass = forms.CharField(label="Passwort", max_length=50, required=False)
+
+class UploadFileForm(forms.Form):
+    title = forms.CharField(max_length=50)
+    file = forms.FileField()
