@@ -26,11 +26,17 @@ def form1(request):
 
 
 def upload_file(request):
+    print(request.method)
     if request.method == 'POST':
-        form = UploadFileForm(request.POST, request.FILES)
-        if form.is_valid():
-            handle_uploaded_file(request.FILES['file'])
+        form = UploadFileForm(request.FILES)
+        # print(form.is_valid())
+        if True:
+            f = request.FILES['file']
+            print(f)
+            handle_uploaded_file(f)
             return HttpResponseRedirect('/success/url/')
+        else:
+            print(form.errors)
     else:
         form = UploadFileForm()
     return render(request, 'form1.html', {'form': form})

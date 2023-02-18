@@ -22,5 +22,5 @@ class NameForm(MyBaseForm):
     your_pass = forms.CharField(label="Passwort", max_length=50, required=False)
 
 class UploadFileForm(forms.Form):
-    title = forms.CharField(max_length=50)
+    # title = forms.CharField(max_length=50)
     file = forms.FileField()
