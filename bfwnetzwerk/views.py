@@ -4,7 +4,7 @@ from django.http import HttpResponseRedirect
 from django.shortcuts import render
 
 from .forms import *
-from .tools import handle_uploaded_file
+from .tools import handle_uploaded_file, read_csv
 
 def form1(request):
     # if this is a POST request we need to process the form data
@@ -32,8 +32,8 @@ def upload_file(request):
         # print(form.is_valid())
         if True:
             f = request.FILES['file']
-            print(f)
-            handle_uploaded_file(f)
+            f_name=handle_uploaded_file(f)
+            read_csv(f_name)
             return HttpResponseRedirect('/success/url/')
         else:
             print(form.errors)

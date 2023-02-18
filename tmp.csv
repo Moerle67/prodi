@@ -1,19 +1,15 @@
-﻿Angebotsübersicht ;;;;;;;;;;;;;;
-BFW Schömberg + pro.Di GmbH Schömberg integrativ;;;;;;;;;;;;;;
-;;;;;;;;;;;;;;
-Maßnahmentitel;Fachrichtung;Maßnahmeart;Abrechnungsart;Dauer;Praxisdauer;Abschluss (Zertifikate);inhaltl. Schlagrichtung;Schlagwörter;Geschäftsfeld/Kostenträger;Status;Dokumente;Maßnahmenverantwortlich;Organisation;Ansprechpartner
-;;;;;;;;;;;;;;
+﻿Maßnahmentitel;Fachrichtung;Maßnahmeart;Abrechnungsart;Dauer;Praxisdauer;Abschluss (Zertifikate);inhaltl. Schlagrichtung;Schlagwörter;Geschäftsfeld/Kostenträger;Status;Dokumente;Maßnahmenverantwortlich;Organisation;Ansprechpartner;;;;
 Produktionshelfer/-in Bestückung und Elektromontage;A1;"Assessment
 
 
 
 
-";Reha;2 Wochen;-;;Abklärung der intellektuellen, medizinischen, beruflichen Eignung in bis zu 7 festgelegten Berufsfeldern sowie eine ein- zweiwöchige Hospitationsphase in einem oder mehreren Berufsfeldern zur Abklärung der aktuellen Belastbarkeit;Orientierung, Arbeitserprobung, Assessment,  Berufsperspektive, Findungsprozess, Berufsbilder, medizinische Abklärung, Eignungsabklärung, Berufsfindung, Neuorientierung, neue Berufsfelder Leistungsvermögen, berufspraktische Erprobungen, medizinische Abklärung, Stärken, langfristige Jobperspektive, psychologische Eignungsuntersuchung, sozialmedizinische Stellungnahme, fachpraktische Testung;"Agentur für Arbeit/Jobcenter
+";Reha;2 Wochen;-;;Abklärung der intellektuellen, medizinischen, beruflichen Eignung in bis zu 7 festgelegten Berufsfeldern;Orientierung, Arbeitserprobung, Assessment,  Berufsperspektive, Findungsprozess, Berufsbilder, medizinische Abklärung, Eignungsabklärung, Berufsfindung, Neuorientierung, neue Berufsfelder Leistungsvermögen, berufspraktische Erprobungen, medizinische Abklärung, Stärken, langfristige Jobperspektive, psychologische Eignungsuntersuchung, sozialmedizinische Stellungnahme, fachpraktische Testung;"Agentur für Arbeit/Jobcenter
 Berufsgenossenschaften
 Deutsche Rentenversicherung
 Reha";aktiv;Maßnahmenbeschreibung DMS;Susanne Vieth;BFW Schömberg;"Tamara Schumann
 t.schumann@pro-di.net
-07159 406-7351"
+07159 406-7351";;;;
 Erweiterte Arbeitserprobung/Berufsfindung;A1;"Assessment
 
 
@@ -24,7 +20,7 @@ Berufsgenossenschaften
 Deutsche Rentenversicherung
 Reha";aktiv;Maßnahmenbeschreibung DMS;Susanne Vieth;BFW Schömberg;"Tamara Schumann
 t.schumann@pro-di.net
-07159 406-7352"
+07159 406-7352";;;;
 Kurz-Arbeitserprobung;A1;"Assessment
 
 
@@ -35,7 +31,7 @@ Berufsgenossenschaften
 Deutsche Rentenversicherung
 Reha";aktiv;Maßnahmenbeschreibung DMS;Susanne Vieth;BFW Schömberg;"Tamara Schumann
 t.schumann@pro-di.net
-07159 406-7353"
+07159 406-7353";;;;
 JobFit Abklärung;A4;"Assessment
 
 
@@ -47,7 +43,7 @@ Aufstiegsqualifizierung, Leistungsvermögen, berufspraktische Erprobungen, mediz
 Deutsche Rentenversicherung
 Reha";aktiv;Maßnahmenbeschreibung DMS;Susanne Vieth;BFW Schömberg;"Tamara Schumann
 t.schumann@pro-di.net
-07159 406-7354"
+07159 406-7354";;;;
 Psychologische Eignungsuntersuchung (PEU);A5;"Assessment
 
 
@@ -57,7 +53,7 @@ Psychologische Eignungsuntersuchung (PEU);A5;"Assessment
 Deutsche Rentenversicherung
 Reha";aktiv;Maßnahmenbeschreibung DMS;Susanne Vieth;BFW Schömberg;"Tamara Schumann
 t.schumann@pro-di.net
-07159 406-7355"
+07159 406-7355";;;;
 Erweiterte Eignungsuntersuchung (PEU);A2;"Assessment
 
 
@@ -67,7 +63,7 @@ Erweiterte Eignungsuntersuchung (PEU);A2;"Assessment
 Deutsche Rentenversicherung
 Reha";aktiv;Maßnahmenbeschreibung DMS;Susanne Vieth;BFW Schömberg;"Tamara Schumann
 t.schumann@pro-di.net
-07159 406-7356"
+07159 406-7356";;;;
 "Psychologische Eignungsuntersuchung (PEU)
 für DRV Baden-Württemberg in Stuttgart";A7;"Assessment
 
@@ -78,7 +74,7 @@ für DRV Baden-Württemberg in Stuttgart";A7;"Assessment
 Deutsche Rentenversicherung
 Reha";aktiv;Maßnahmenbeschreibung DMS;Susanne Vieth;BFW Schömberg;"Tamara Schumann
 t.schumann@pro-di.net
-07159 406-7357"
+07159 406-7357";;;;
 Evaluation der funktionellen Leistungsfähigkeit (EFL);A3;"Assessment
 
 
@@ -89,65 +85,66 @@ Leistungsvermögen, Testung körperliche Leistungsfähigkeit";"Berufsgenossensch
 Deutsche Rentenversicherung
 Reha";aktiv;Maßnahmenbeschreibung DMS;Günter Hamburger;BFW Schömberg;"Tamara Schumann
 t.schumann@pro-di.net
-07159 406-7358"
+07159 406-7358";;;;
 Reha-Vorbereitung;B;Vorbereitung;Reha;18 Wochen;-;Hauszeugnis;Mit Schwerpunkten Deutsch und oder Mathematik intensive Vorförderung;Reha-Vorbereitung, Vorbereitungskurs, Förderung, Wiederauffrischen, Lernkompetenz, Lernen lernen, Lernwerkstatt, Lerntechniken, Deutsch, Mathematik, intensiv Mathematik, Schwerpunkt Mathematik, beruflicher Neustart, Neubeginn;"Agentur für Arbeit/Jobcenter
 Berufsgenossenschaften
 Deutsche Rentenversicherung
 Reha, FbW";aktiv;Maßnahmenbeschreibung DMS;Dr. Benjamin Braß;BFW Schömberg;"Tamara Schumann
 t.schumann@pro-di.net
-07159 406-7359"
+07159 406-7359";;;;
 Reha-Vorbereitung;B;Vorbereitung;Reha;18 Wochen;-;Hauszeugnis;Mit Schwerpunkt Deutsch als Fremdsprache intensive Vorförderung;Reha-Vorbereitung, Vorbereitungskurs, Förderung, Wiederauffrischen, Lernkompetenz, Lernen lernen, Lernwerkstatt, Lerntechniken, Deutsch, Mathematik, intensiv Deutsch, Schwerpunkt Deutsch, beruflicher Neustart, Neubeginn;"Agentur für Arbeit/Jobcenter
 Berufsgenossenschaften
 Deutsche Rentenversicherung
 Reha, FbW";aktiv;Maßnahmenbeschreibung DMS;Dr. Benjamin Braß;BFW Schömberg;"Tamara Schumann
 t.schumann@pro-di.net
-07159 406-7360"
+07159 406-7360";;;;
 Reha-Vorbereitung;B;Vorbereitung;Reha;12 Wochen;-;Hauszeugnis;Vorbereitung auf die Ausbildung - Qualifikationsvorbereitung kfm. Berufsfelder;Reha-Vorbereitung, Vorbereitungskurs, Förderung, Wiederauffrischen, Lernkompetenz, Lernen lernen, Lernwerkstatt, Lerntechniken, Deutsch, Mathematik, beruflicher Neustart, Neubeginn, kaufmännische Vorbereitung;"Agentur für Arbeit/Jobcenter
 Berufsgenossenschaften
 Deutsche Rentenversicherung
 Reha, FbW";aktiv;Maßnahmenbeschreibung DMS;Dr. Benjamin Braß;BFW Schömberg;"Tamara Schumann
 t.schumann@pro-di.net
-07159 406-7361"
+07159 406-7361";;;;
 Reha-Vorbereitung;B;Vorbereitung;Reha;12 Wochen;-;Hauszeugnis;Vorbereitung auf die Ausbildung - Qualifikationsvorbereitung technische Berufsfelder;Reha-Vorbereitung, Vorbereitungskurs, Förderung, Wiederauffrischen, Lernkompetenz, Lernen lernen, Lernwerkstatt, Lerntechniken, Deutsch, Mathematik, beruflicher Neustart, Neubeginn, technisch-gewerbliche Vorbereitung;"Agentur für Arbeit/Jobcenter
 Berufsgenossenschaften
 Deutsche Rentenversicherung
 Reha, FbW";aktiv;Maßnahmenbeschreibung DMS;Dr. Benjamin Braß;BFW Schömberg;"Tamara Schumann
 t.schumann@pro-di.net
-07159 406-7362"
+07159 406-7362";;;;
 Reha-Vorbereitung für Verwaltungsfachangestellte;B;Vorbereitung;Reha;12 Wochen;-;Hauszeugnis;Vorbereitung auf die Ausbildung  mit Fokus auf Wirtschaft- u. Sozialkunde - Qualifikationsvorbereitung Verwaltungsfach;Reha-Vorbereitung, Vorbereitungskurs, Förderung, Wiederauffrischen, Lernkompetenz, Lernen lernen, Lernwerkstatt, Lerntechniken, Deutsch, Mathematik, beruflicher Neustart, Neubeginn, kaufmännische Vorbereitung, Verwaltungsfach;"Agentur für Arbeit/Jobcenter
 Berufsgenossenschaften
 Deutsche Rentenversicherung
 Reha, FbW";aktiv;Maßnahmenbeschreibung DMS;Dr. Benjamin Braß;BFW Schömberg;"Tamara Schumann
 t.schumann@pro-di.net
-07159 406-7363"
+07159 406-7363";;;;
 Reha-Vorbereitung für Steuerfachangestellte;B;Vorbereitung;Reha;"12 Wochen
 4 Wochen";-;Hauszeugnis;Vorbereitung auf die Ausbildung zum Steuerfachangestellten - Qualifikationsvorbereitung;Reha-Vorbereitung, Vorbereitungskurs, Förderung, Wiederauffrischen, Lernkompetenz, Lernen lernen, Lernwerkstatt, Lerntechniken, Deutsch, Mathematik, beruflicher Neustart, Neubeginn, kaufmännische Vorbereitung, Vorbereitung, Steuerfach;"Agentur für Arbeit/Jobcenter
 Berufsgenossenschaften
 Deutsche Rentenversicherung
 Reha, FbW";aktiv;Maßnahmenbeschreibung DMS;Dr. Benjamin Braß;BFW Schömberg;"Tamara Schumann
 t.schumann@pro-di.net
-07159 406-7364"
+07159 406-7364";;;;
 Reha-Vorbereitung für Rehabilitation in Betrieb und Berufsschule;B;Vorbereitung;Reha;12 Wochen;-;Hauszeugnis;Vorbereitung auf eine betriebliche Ausbildung;Reha-Vorbereitung, Vorbereitungskurs, Förderung, Wiederauffrischen, Lernkompetenz, Lernen lernen, Lernwerkstatt, Lerntechniken, Deutsch, Mathematik, beruflicher Neustart, Neubeginn, betriebliche Ausbildung ;"Agentur für Arbeit/Jobcenter
 Berufsgenossenschaften
 Deutsche Rentenversicherung
 Reha, FbW";aktiv;Maßnahmenbeschreibung DMS;Dr. Benjamin Braß;BFW Schömberg;"Tamara Schumann
 t.schumann@pro-di.net
-07159 406-7365"
+07159 406-7365";;;;
 Vorbereitung auf Externenprüfung/Nachqualifizierung nach Absprache;C;Umschulung;Reha;nach Absprache;-;IHK-Zeugnis;Prüfungsvorbereitung;Einschlägige Berufsefahrung, Nachholen Berufsabschluss, Kammerprüfung verschiedene Berufsrichtungen, Prüfungsvorbereitung ;"Agentur für Arbeit/Jobcenter
 Berufsgenossenschaften
 Deutsche Rentenversicherung
 Reha, FbW";aktiv;Maßnahmenbeschreibung DMS;jeweiliger Teamleiter;BFW Schömberg;"Tamara Schumann
 t.schumann@pro-di.net
-07159 406-7366"
+07159 406-7366";;;;
 Verwaltungsfachangestellte*r;C1;Umschulung;Reha;24 Monate;7 Monate;"Staatl. Geprüft. Verwaltungsfachangestellte*r Fachrichtung Kommunal- und Landesverwaltung
 SAP-Zertifikat SAP 01
-ICDL-Zertifikat (Standardzertifikat)";Experten in der öffentlichen Verwaltung - kfm. Ausbildung;"Reha
+ICDL-Zertifikat (Standardzertifikat)";Experten in der öffentlichen Verwaltung - kfm. Ausbildung;"Verwaltungsfachangestellte, Verwaltungsfachangestellter, Büromanagement,  kaufmännischer Sachbearbeiter, kaufmännische Sachbearbeiterin, kaufmännischer Sachbearbeiter,
+Öffentliches Recht, Verwaltung, öffentliiche Verwaltung, Gemeindeverwaltung, Stadtverwaltung, Verwaltungsrecht
 ";"Agentur für Arbeit/Jobcenter
 Berufsgenossenschaften
 Deutsche Rentenversicherung
 Reha, FbW";aktiv;Maßnahmenbeschreibung DMS;Jan Thomke;BFW Schömberg;"Tamara Schumann
 t.schumann@pro-di.net
-07159 406-7367"
+07159 406-7367";;;;
 Steuerfachangestellte/-r;C1;Umschulung;Reha;24 Monate;"3 Monate
 Schömberg
 6 Monate
@@ -160,7 +157,7 @@ Berufsgenossenschaften
 Deutsche Rentenversicherung
 Reha, FbW";aktiv;Maßnahmenbeschreibung DMS;Heike Bihler;BFW Schömberg;"Tamara Schumann
 t.schumann@pro-di.net
-07159 406-7368"
+07159 406-7368";;;;
 Fachpraktiker/-in für Bürokommunikation;C1;Umschulung;Reha;24 Monate;6 Monate;"IHK-Zeugnis
 SAP-Zertifikat SAP 01
 (Umschulungsberuf nach §66 BBiG)";Struktur in kfm. Abteilungen, Unterstützungsleistungen in vielen Bürotätigkeiten;Fachpraktiker für Bürokommunikation, Fachpraktikerin, Kauffrau, Kaufmann, Kauffrau, Büromanagement, Industriekaufmann, Industriekauffrau, Materialwirtschaft, kaufmännische Sachbearbeiterin, Lagerverwalter, Lagerverwalterin, Verkaufsfachberater, Verkaufsfachberaterin, kaufmännischer Sachbearbeiter Absatzwirtschaft, kaufmännischer Sachbearbeiter Export- und Zollabwicklung, kaufmännischer Sachbearbeiter Empfang und Rezeption, Bürowirtschaft, Büroorganisation, Buchhaltung, Rechnungswesen;"Agentur für Arbeit/Jobcenter
@@ -168,21 +165,21 @@ Berufsgenossenschaften
 Deutsche Rentenversicherung
 Reha";aktiv;Maßnahmenbeschreibung DMS;Andreas Fritsch;BFW Schömberg;"Tamara Schumann
 t.schumann@pro-di.net
-07159 406-7369"
+07159 406-7369";;;;
 Kaufmann/-frau für Büromanagement;C1;Umschulung;Reha;24 Monate;6 Monate;"IHK-Zeugnis
 SAP-Zertifikat SAP 01";Die Experten für die Büroorganisation - kfm. Ausbildung;Fachpraktiker für Bürokommunikation, Fachpraktikerin, Kauffrau, Kaufmann, Kauffrau, Büromanagement, Industriekaufmann, Industriekauffrau, Materialwirtschaft, kaufmännische Sachbearbeiterin, Lagerverwalter, Lagerverwalterin, Verkaufsfachberater, Verkaufsfachberaterin, kaufmännischer Sachbearbeiter Absatzwirtschaft, kaufmännischer Sachbearbeiter Export- und Zollabwicklung, kaufmännischer Sachbearbeiter Empfang und Rezeption, Bürowirtschaft, Büroorganisation, Buchhaltung, Rechnungswesen;"Agentur für Arbeit/Jobcenter
 Berufsgenossenschaften
 Deutsche Rentenversicherung
 Reha, FbW";aktiv;Maßnahmenbeschreibung DMS;Andreas Fritsch;BFW Schömberg;"Tamara Schumann
 t.schumann@pro-di.net
-07159 406-7370"
+07159 406-7370";;;;
 Industriekaufmann/-frau;C1;Umschulung;Reha;24 Monate;6 Monate;"IHK-Zeugnis
 SAP-Zertifikat SAP 01";Organisationstalente mit dem Blick für das Ganze - kfm. Ausbildung;Fachpraktiker für Bürokommunikation, Fachpraktikerin, Kauffrau, Kaufmann, Kauffrau, Büromanagement, Industriekaufmann, Industriekauffrau, Materialwirtschaft, kaufmännische Sachbearbeiterin, Lagerverwalter, Lagerverwalterin, Verkaufsfachberater, Verkaufsfachberaterin, kaufmännischer Sachbearbeiter Absatzwirtschaft, kaufmännischer Sachbearbeiter Export- und Zollabwicklung, kaufmännischer Sachbearbeiter Empfang und Rezeption, Bürowirtschaft, Büroorganisation, Buchhaltung, Rechnungswesen;"Agentur für Arbeit/Jobcenter
 Berufsgenossenschaften
 Deutsche Rentenversicherung
 Reha, FbW";aktiv;Maßnahmenbeschreibung DMS;Andreas Fritsch;BFW Schömberg;"Tamara Schumann
 t.schumann@pro-di.net
-07159 406-7371"
+07159 406-7371";;;;
 Wiedereingliederung von Steuerfachangestellten;D1;Umschulung;Reha;34 Wochen;8 Wochen;"Hausinternes Zertifikat
 SAP-Anwenderzertifikat 'Foundation Level'";Berufsrückkehrer im Steuerfach;"Steuerfachangestellter, Steuerfachangestellte, Wiedereingliederung von Steuerfachangestellten, Steuern, Finanzen, Lohnbuchhalter, Lohnbuchhalterin, Lohnbuchhaltung, Finanzbuchhalter, Finanzbuchhaltung, kaufmännischer Sachbearbeiter Rechnungswesen, Buchhalter Debitoren, Buchhalter Kreditoren, Buchhalterin, Einkommenssteuererklärung, DATEV, Lexware, SAP, Steuerberaterkammer, Steuerwesen, 
 Steuerfach, DATEV, Rechnungswesen, Buchhaltung, Lohn und Gehalt, Personalwesen, Einkommenssteuer, Umsatzsteuer
@@ -190,7 +187,7 @@ Steuerfach, DATEV, Rechnungswesen, Buchhaltung, Lohn und Gehalt, Personalwesen, 
 Deutsche Rentenversicherung
 Reha, FbW";aktiv;Maßnahmenbeschreibung DMS;Heike Bihler;BFW Schömberg;"Tamara Schumann
 t.schumann@pro-di.net
-07159 406-7372"
+07159 406-7372";;;;
 Fachkraft Auftragsbearbeitung und Rechnungswesen (IHK);D1;Anppassungsqualifizierung;Reha;34 Wochen;8 Wochen;"Hausinternes Zertifikat
 SAP-Anwenderzertifikat 'Foundation Level' 
 IHK-Zertifikat";Flexible Fachkräfte für die Buchhaltung - kfm. Qualifizierung;"Kauffrau, Kaufmann für Büromanagement, Industriekaufmann, Industriekauffrau, Rechnungswesen, Auftragsbearbeitung, Debitorenbuchhaltung, Kreditorenbuchhaltung, Finanzbuchhaltung
@@ -198,7 +195,7 @@ IHK-Zertifikat";Flexible Fachkräfte für die Buchhaltung - kfm. Qualifizierung;
 Deutsche Rentenversicherung
 Reha, FbW";aktiv;Maßnahmenbeschreibung DMS;Andreas Fritsch;BFW Schömberg;"Tamara Schumann
 t.schumann@pro-di.net
-07159 406-7373"
+07159 406-7373";;;;
 Fachkraft Einkauf und Disposition (IHK);D1;Anppassungsqualifizierung;Reha;34 Wochen;8 Wochen;"Hausinternes Zertifikat
 SAP-Anwenderzertifikat 'Foundation Level' 
 IHK-Zertifikat";Den Warenfluss der AG im Blick behalten - kfm. Qualifizierung;"Kauffrau, Kaufmann für Büromanagement, Industriekaufmann, Industriekauffrau, kaufmännischer Sachbearbeiter Materialwirtschaft, kaufmännische Sachbearbeiterin, Lagerverwalter, Lagerverwalterin, Einkauf, Disposition, Auftragsabwicklung, Materialwirtschaft
@@ -206,7 +203,7 @@ IHK-Zertifikat";Den Warenfluss der AG im Blick behalten - kfm. Qualifizierung;"K
 Deutsche Rentenversicherung
 Reha, FbW";aktiv;Maßnahmenbeschreibung DMS;Andreas Fritsch;BFW Schömberg;"Tamara Schumann
 t.schumann@pro-di.net
-07159 406-7374"
+07159 406-7374";;;;
 Fachkraft E-Commerce und Vertrieb (IHK);D1;Anppassungsqualifizierung;Reha;34 Wochen;8 Wochen;"Hausinternes Zertifikat
 SAP-Anwenderzertifikat 'Foundation Level' 
 IHK-Zertifikat";Digitale Vertriebstalende für alle Branchen - kfm. Qualifizierung;"Kaufmann, Kauffrau, Kaufmann für Büromanagement, Industriekaufmann, Industriekauffrau,  Sachbearbeiter Absatzwirtschaft, Vertrieb, Absatz, E-Commerce, Auftragsabwicklung, Onlineshop
@@ -214,7 +211,7 @@ IHK-Zertifikat";Digitale Vertriebstalende für alle Branchen - kfm. Qualifizieru
 Deutsche Rentenversicherung
 Reha, FbW";aktiv;Maßnahmenbeschreibung DMS;Andreas Fritsch;BFW Schömberg;"Tamara Schumann
 t.schumann@pro-di.net
-07159 406-7375"
+07159 406-7375";;;;
 Verkaufsfachberater/-in (IHK);D1;Anppassungsqualifizierung;Reha;34 Wochen;8 Wochen;"Hausinternes Zertifikat
 SAP-Anwenderzertifikat 'Foundation Level' 
 IHK-Zertifikat";Im Außen- und Innendienst einsetzbar - kfm. Qualifizierung;"Kauffrau, Kaufmann für Büromanagement, Industriekaufmann, Industriekauffrau,  Verkaufsfachberater, Verkaufsfachberaterin, Fachberater, Fachberaterin, Auftragsabwicklung, Fachberater, Beratung, Angebotserstellung
@@ -222,7 +219,7 @@ IHK-Zertifikat";Im Außen- und Innendienst einsetzbar - kfm. Qualifizierung;"Kau
 Deutsche Rentenversicherung
 Reha, FbW";aktiv;Maßnahmenbeschreibung DMS;Andreas Fritsch;BFW Schömberg;"Tamara Schumann
 t.schumann@pro-di.net
-07159 406-7376"
+07159 406-7376";;;;
 Fachkraft Assistenz und Empfang (IHK);D1;Anppassungsqualifizierung;Reha;34 Wochen;8 Wochen;"Hausinternes Zertifikat
 SAP-Anwenderzertifikat 'Foundation Level' 
 IHK-Zertifikat";Die Visitenkarte für das Unternehmen - kfm. Qualifizierung;"Kauffrau, Kaufmann für Büromanagement, Industriekaufmann, Industriekauffrau, kaufmännischer Sachbearbeiter Empfang und Rezeption, Empfang, Assistenz, kaufmännische Grundtätigkeiten, 
@@ -234,7 +231,7 @@ Büroorganisation, Frontoffice, Backoffice, Büroorganisation, Assistenz, kaufm�
 Deutsche Rentenversicherung
 Reha, FbW";aktiv;Maßnahmenbeschreibung DMS;Andreas Fritsch;BFW Schömberg;"Tamara Schumann
 t.schumann@pro-di.net
-07159 406-7377"
+07159 406-7377";;;;
 Medizinisch-kaufmännische Fachkraft (IHK);D1;Anppassungsqualifizierung;Reha;34 Wochen;8 Wochen;"Hausinternes Zertifikat
 SAP-Anwenderzertifikat 'Foundation Level' 
 IHK-Zertifikat";Allrounder im Gesundheitswesen - kfm. Qualifizierung;"Kauffrau, Kaufmann für Büromanagement, kaufmännische Grundtätigkeiten, Empfang Arzt, Empfangsmitarbeiter, Kassenabrechnung, Praxisorganisation, medizinisch kaufmännische Fachkraft, Abrechnungsfachkraft, Büroorganisation
@@ -242,7 +239,7 @@ IHK-Zertifikat";Allrounder im Gesundheitswesen - kfm. Qualifizierung;"Kauffrau, 
 Deutsche Rentenversicherung
 Reha, FbW";aktiv;Maßnahmenbeschreibung DMS;Andreas Fritsch;BFW Schömberg;"Tamara Schumann
 t.schumann@pro-di.net
-07159 406-7378"
+07159 406-7378";;;;
 IT-System-Elektroniker/-in;C4;Umschulung;Reha;24 Monate;6 Monate;"IHK-Zeugnis
 Cisco-Zertifikat
 ICDL-Zertifikat (Standardzertifikat)";"Experten für Hardwareinstallation und Inbetriebnahme - IT-Ausbildung
@@ -252,7 +249,7 @@ Berufsgenossenschaften
 Deutsche Rentenversicherung
 Reha, FbW";aktiv;Maßnahmenbeschreibung DMS;Oliver Sigrist;BFW Schömberg;"Tamara Schumann
 t.schumann@pro-di.net
-07159 406-7379"
+07159 406-7379";;;;
 Kaufmann/-frau für IT-System-Management;C4;Umschulung;Reha;24 Monate;6 Monate;"IHK-Zeugnis
 Cisco-Zertifikat
 ECDL-Zertifikat (Standardzertifikat)";Kundenbegleitung vom Konzept bis zur funktionierenden IT-Lösung  - IT-Ausbildung;"IT, Informationstechnik, Umschulung, Weiterbildung, Qualifizierung, JobFit-Angebote, Fachinformatiker/-in Anwendungsentwicklung, Fachinformatiker/-in Systemintegration, IT-System-Kaufmann/-frau, IT-System-Elektroniker/-in, Informatikkaufmann/-frau, PC-Supporter/-in, PC- und Netzwerkfachkraft, Bildungsangebot, Qualifizierungsangebot, Hardware, Netzwerk, Telekommunikation, Angebotserstellung, Kalkulation
@@ -261,7 +258,7 @@ Berufsgenossenschaften
 Deutsche Rentenversicherung
 Reha, FbW";aktiv;Maßnahmenbeschreibung DMS;Oliver Sigrist;BFW Schömberg;"Tamara Schumann
 t.schumann@pro-di.net
-07159 406-7380"
+07159 406-7380";;;;
 Kaufmann/-frau für Digitalisierungsmanagement;C4;Umschulung;Reha;24 Monate;6 Monate;"IHK-Zeugnis
 Cisco-Zertifikat
 ICDL-Zertifikat (Standardzertifikat)";Organisator für die IT-Struktur im Unternehmen  - IT-Ausbildung;"IT, Informationstechnik, Umschulung, Weiterbildung, Qualifizierung, JobFit-Angebote, Fachinformatiker/-in Anwendungsentwicklung, Fachinformatiker/-in Systemintegration, IT-System-Kaufmann/-frau, IT-System-Elektroniker/-in, Informatikkaufmann/-frau, PC-Supporter/-in, PC- und Netzwerkfachkraft, Bildungsangebot, Qualifizierungsangebot, Hardware, Netzwerk, Telekommunikation, Angebotserstellung, Kalkulation, IT-System-Kaufmann/-frau
@@ -270,7 +267,7 @@ Berufsgenossenschaften
 Deutsche Rentenversicherung
 Reha, FbW";aktiv;Maßnahmenbeschreibung DMS;Oliver Sigrist;BFW Schömberg;"Tamara Schumann
 t.schumann@pro-di.net
-07159 406-7381"
+07159 406-7381";;;;
 Fachinformatiker/-in Systemintegration;C4;Umschulung;Reha;24 Monate;6 Monate;"IHK-Zeugnis
 Cisco-Zertifikat
 ICDL-Zertifikat (Standardzertifikat)";Planung und Konfiguration von IT-Systemen  - IT-Ausbildung;"IT, Informationstechnik, Umschulung, Weiterbildung, Qualifizierung, JobFit-Angebote, Fachinformatiker/-in Anwendungsentwicklung, Fachinformatiker/-in Systemintegration, IT-System-Kaufmann/-frau, IT-System-Elektroniker/-in, Informatikkaufmann/-frau, PC-Supporter/-in, PC- und Netzwerkfachkraft, Bildungsangebot, Qualifizierungsangebot, Hardware, Netzwerk, Telekommunikation
@@ -279,7 +276,7 @@ Berufsgenossenschaften
 Deutsche Rentenversicherung
 Reha, FbW";aktiv;Maßnahmenbeschreibung DMS;Oliver Sigrist;BFW Schömberg;"Tamara Schumann
 t.schumann@pro-di.net
-07159 406-7382"
+07159 406-7382";;;;
 Fachinformatiker/-in Anwendungsentwicklung;C4;Umschulung;Reha;24 Monate;6 Monate;"IHK-Zeugnis
 Cisco-Zertifikat
 ICDL-Zertifikat (Standardzertifikat)";Anpassen und Weiterentwicklung einer bestehenden Software  - IT-Ausbildung;"IT, Informationstechnik, Umschulung, Weiterbildung, Qualifizierung, JobFit-Angebote, Fachinformatiker/-in Anwendungsentwicklung, Fachinformatiker/-in Systemintegration, IT-System-Kaufmann/-frau, IT-System-Elektroniker/-in, Informatikkaufmann/-frau, PC-Supporter/-in, PC- und Netzwerkfachkraft, Bildungsangebot, Qualifizierungsangebot, Hardware, Netzwerk, Telekommunikation
@@ -288,7 +285,7 @@ Berufsgenossenschaften
 Deutsche Rentenversicherung
 Reha, FbW";aktiv;Maßnahmenbeschreibung DMS;Oliver Sigrist;BFW Schömberg;"Tamara Schumann
 t.schumann@pro-di.net
-07159 406-7383"
+07159 406-7383";;;;
 PC- und Netzwerkfachkraft (IHK);D2;Anppassungsqualifizierung;Reha;46 Wochen;6 Wochen;"IHK-Zertifikat
 Hausinternes Zertifikat
 Cisco-Zertifikat 
@@ -297,21 +294,21 @@ ICDL (Base-Zertifikat)";Sorgt für Netzwerk ohne Kommunikationsprobleme  - IT-Qu
 Deutsche Rentenversicherung
 Reha, FbW";aktiv;Maßnahmenbeschreibung DMS;Oliver Sigrist;BFW Schömberg;"Tamara Schumann
 t.schumann@pro-di.net
-07159 406-7384"
+07159 406-7384";;;;
 Industrieelektriker Fachrichtung Geräte und Systeme;C3;Umschulung;Reha;18 Monate;9 Wochen;IHK-Zeugnis;Elektrofachkräfte mit der Lizenz zum Reparieren - Elektronikausbildung;"Elektrik, Elektronik, Industrieelektik, Betriebstechnik, Elektrofachkraft, Umschulung, Weiterbildung, Qualifizierung, Industrieelektriker, Industrieelektrikerin, Industrieelektriker Fachrichtung Geräte und Systeme, Elektroniker, Elektronikerin, Produktionshelferin, Produktionshelfer für Bestückung und Elektromontage, Fachkraft für Elektronikfertigung, Stufenqualifizierung, SPS
 ";"Agentur für Arbeit/Jobcenter
 Berufsgenossenschaften
 Deutsche Rentenversicherung
 Reha, FbW";aktiv;Maßnahmenbeschreibung DMS;Jochen Retzbach;BFW Schömberg;"Tamara Schumann
 t.schumann@pro-di.net
-07159 406-7385"
+07159 406-7385";;;;
 Elektroniker/-in für Geräte und Systeme;C3;Umschulung;Reha;24 Monate;9 Wochen;IHK-Zeugnis;Multitalente im Umgang mit Hightech  - Elektronikausbildung;"Elektrik, Elektronik, Industrieelektik, Betriebstechnik, Elektrofachkraft, Umschulung, Weiterbildung, Qualifizierung, Industrieelektriker, Industrieelektrikerin, Industrieelektriker Fachrichtung Geräte und Systeme, Elektroniker, Elektronikerin, Produktionshelferin, Produktionshelfer für Bestückung und Elektromontage, Fachkraft für Elektronikfertigung, Stufenqualifizierung, SPS
 ";"Agentur für Arbeit/Jobcenter
 Berufsgenossenschaften
 Deutsche Rentenversicherung
 Reha, FbW";aktiv;Maßnahmenbeschreibung DMS;Jochen Retzbach;BFW Schömberg;"Tamara Schumann
 t.schumann@pro-di.net
-07159 406-7386"
+07159 406-7386";;;;
 Technischer Hauswart/-in (IHK);D2;Anppassungsqualifizierung;Reha;44 Wochen;16 Wochen;"Hausinternes Zeritifikat
 IHK-Zertifikat 'Elektrofachkraft für festgelegte Tätigkeiten'
 IHK-Zertifikat 'Technischer Hauswart*in'
@@ -319,20 +316,20 @@ IHK-Zertifikat 'Technischer Hauswart*in'
 Deutsche Rentenversicherung
 Reha, FbW";aktiv;Maßnahmenbeschreibung DMS;Jochen Retzbach;BFW Schömberg;"Tamara Schumann
 t.schumann@pro-di.net
-07159 406-7387"
+07159 406-7387";;;;
 Produktionshelfer/-in Bestückung und Elektromontage;D2;Anppassungsqualifizierung;Reha;26 Wochen;4 Wochen;Hausinternes Zertifikat;Routiniers für Montage- und Verbindungsarbeiten  - Elektronikqualifizierung;"Elektrik, Elektronik, Elektrofachkraft,   Industrieelektriker, Industrieelektrikerin, Industrieelektriker Fachrichtung Geräte und Systeme, Elektroniker, Elektronikerin, Produktionshelferin, Produktionshelfer für Bestückung und Elektromontage, Fachkraft für Elektronikfertigung, Stufenqualifizierung,, SMD, Bestückung, SPS
 Herstellung elektronischer Komponenten";"Berufsgenossenschaften
 Deutsche Rentenversicherung
 Reha, FbW";aktiv;Maßnahmenbeschreibung DMS;Jochen Retzbach;BFW Schömberg;"Tamara Schumann
 t.schumann@pro-di.net
-07159 406-7388"
+07159 406-7388";;;;
 Fachkraft für Elektronikfertigung;D2;Anppassungsqualifizierung;Reha;26 Wochen;4 Wochen;"Hausinternes Zeritifikat
 IHK-Zertifikat 'Elektrofachkraft für festgelegte Tätigkeiten'";Experten für Elektromontage  - Elektronikqualifizierung;"Elektrik, Elektronik, Elektrofachkraft,   Industrieelektriker, Industrieelektrikerin, Industrieelektriker Fachrichtung Geräte und Systeme, Elektroniker, Elektronikerin, Produktionshelferin, Produktionshelfer für Bestückung und Elektromontage, Fachkraft für Elektronikfertigung, Stufenqualifizierung,, SMD, Bestückung, SPS
 Herstellung elektronischer Komponenten";"Berufsgenossenschaften
 Deutsche Rentenversicherung
 Reha, FbW";aktiv;Maßnahmenbeschreibung DMS;Jochen Retzbach;BFW Schömberg;"Tamara Schumann
 t.schumann@pro-di.net
-07159 406-7389"
+07159 406-7389";;;;
 Qualitätsfachmann/-frau Fertigungsprüftechnik;C2;Umschulung;Reha;24 Monate;"3 Monate
 ";"IHK-Zeugnis
 DGQ-Qualitätsassistent Technik, AKUKOM Stufe I Basis
@@ -342,7 +339,7 @@ Berufsgenossenschaften
 Deutsche Rentenversicherung
 Reha, FbW";aktiv;Maßnahmenbeschreibung DMS;Hermann Proß;BFW Schömberg;"Tamara Schumann
 t.schumann@pro-di.net
-07159 406-7390"
+07159 406-7390";;;;
 Industriefachkraft (IHK) für Qualitätssicherung;D2;Anppassungsqualifizierung;Reha;28 Wochen;6 Wochen;"Hausinternes Zertifikat, 
 DGQ-Qualitätsassistent Technik
 IHK-Zertifikat ";Idealbesetzung in der Qualitätssicherung - Qualitätswesenqualifizierung;"Qualitätswesen, Qualitätsfachleute, Ausbildung, Umschulung, Weiterbildung, Qualifizierung, Qualitätsfachmann, Qualitätsfachfrau, Qualitätsprüfer, Industriefachkraft für Qualitätssicherung, Industriefachkraft für CAD-Konstruktion und Qualitätssicherung, Qualitätsmanagement, DGQ, Qualitätsassistent, Bildungsangebot, Qualifizierungsangebot, 3D Koordinatenmessung, Fertigungsprüftechnik, Lagetoleranzen, Qualitätsmanagement, Längen- und Messprüftechnik
@@ -350,34 +347,34 @@ IHK-Zertifikat ";Idealbesetzung in der Qualitätssicherung - Qualitätswesenqual
 Deutsche Rentenversicherung
 Reha, FbW";aktiv;Maßnahmenbeschreibung DMS;Hermann Proß;BFW Schömberg;"Tamara Schumann
 t.schumann@pro-di.net
-07159 406-7391"
+07159 406-7391";;;;
 Qualitätsprüfer/-in (IHK) Fertigungsprüftechnik;D2;Anppassungsqualifizierung;Reha;44 Wochen;6 Wochen;"Hausinternes Zertifikat, 
 IHK-Zertifikat DGQ-Qualitätsassistent Technik";Produktbegleiter von der Erstbemusterung bis zur Endprüfung - Qualitätswesenqualifizierung;"Qualitätswesen, Qualitätsfachleute, Ausbildung, Umschulung, Weiterbildung, Qualifizierung, Qualitätsfachmann, Qualitätsfachfrau, Qualitätsprüfer, Industriefachkraft für Qualitätssicherung, Industriefachkraft für CAD-Konstruktion und Qualitätssicherung, Qualitätsmanagement, DGQ, Qualitätsassistent, Bildungsangebot, Qualifizierungsangebot, 3D Koordinatenmessung, Fertigungsprüftechnik, Lagetoleranzen, Qualitätsmanagement, Längen- und Messprüftechnik
 ";"Berufsgenossenschaften
 Deutsche Rentenversicherung
 Reha, FbW";aktiv;Maßnahmenbeschreibung DMS;Hermann Proß;BFW Schömberg;"Tamara Schumann
 t.schumann@pro-di.net
-07159 406-7392"
+07159 406-7392";;;;
 Technischer Produktdesigner/-in Fachrichtung Maschinen- und Anlagenkostruktion;C6;Umschulung;Reha;24 Monate;2 Monate;IHK-Zeugnis;Produkte mit neuster Technik entwickeln und gestalten - Konstruktionsausbildung;"Konstruktion, CAD, Technischer Produktdesigner, Industriefachkraft für CAD-Konstruktion, Industriefachkraft für CAD-Konstruktion mit Metallgrundlagen, Industriefachkraft für CAD-Konstruktion und CAM-Fertigung, Industriefachkraft für CAD-Konstruktion und Qualitätssicherung, Technischer Zeichner, CAD, Siemens NX, Maschienenbau, 3D-Druck, 3D-Konstruktion
 ";"Agentur für Arbeit/Jobcenter
 Berufsgenossenschaften
 Deutsche Rentenversicherung
 Reha, FbW";aktiv;Maßnahmenbeschreibung DMS;Ronny Beyer;BFW Schömberg;"Tamara Schumann
 t.schumann@pro-di.net
-07159 406-7393"
+07159 406-7393";;;;
 Industriefachkraft (IHK) für CAD-Konstruktion;D2;Anppassungsqualifizierung;Reha;26 Wochen;6 Wochen;"Hausinternes Zertifikat
 IHK-Zertifikat";CAD-Fachkräfte mit Berufs- und Lebenserfahrung - Konstruktionqualifizierung;Konstruktion, CAD, Technischer Produktdesigner, Industriefachkraft für CAD-Konstruktion, Industriefachkraft für CAD-Konstruktion mit Metallgrundlagen, Industriefachkraft für CAD-Konstruktion und CAM-Fertigung, Industriefachkraft für CAD-Konstruktion und Qualitätssicherung, Technischer Zeichner, CAD, Siemens NX, Maschienenbau, 3D-Druck, 3D-Konstruktion;"Berufsgenossenschaften
 Deutsche Rentenversicherung
 Reha, FbW";aktiv;Maßnahmenbeschreibung DMS;Ronny Beyer;BFW Schömberg;"Tamara Schumann
 t.schumann@pro-di.net
-07159 406-7394"
+07159 406-7394";;;;
 Industriefachkraft (IHK) für CAD-Konstruktion und Metallgrundlagen;D2;Anppassungsqualifizierung;Reha;44 Wochen;6 Wochen;"Hausinternes Zertifikat
 IHK-Zertifikat";AD-Fachkräfte mit techn. Know-How - Konstruktion-Qualifizierung;Konstruktion, CAD, Technischer Produktdesigner, Industriefachkraft für CAD-Konstruktion, Industriefachkraft für CAD-Konstruktion mit Metallgrundlagen, Industriefachkraft für CAD-Konstruktion und CAM-Fertigung, Industriefachkraft für CAD-Konstruktion und Qualitätssicherung, Technischer Zeichner, CAD, Siemens NX, Maschienenbau, 3D-Druck, 3D-Konstruktion;"Berufsgenossenschaften
 Deutsche Rentenversicherung
 Reha, FbW";aktiv;Maßnahmenbeschreibung DMS;"Ronny Beyer
 Michael Volpp";BFW Schömberg;"Tamara Schumann
 t.schumann@pro-di.net
-07159 406-7395"
+07159 406-7395";;;;
 Industriefachkraft (IHK) für CAD-Konstruktion und Qualitätssicherung;D2;Anppassungsqualifizierung;Reha;44 Wochen;6 Wochen;"Hausinternes Zertifikat
 DGQ-Qualitätsassistent Technik
 IHK-Zertifikat";Verbindungsstelle zwischen Konstruktion und Qualitätssicherung - Qualitätswesen-Qualifizierung;"Konstruktion, CAD, Technischer Produktdesigner, Industriefachkraft für CAD-Konstruktion, Industriefachkraft für CAD-Konstruktion mit Metallgrundlagen, Industriefachkraft für CAD-Konstruktion und CAM-Fertigung, Industriefachkraft für CAD-Konstruktion und Qualitätssicherung, Technischer Zeichner, CAD, Siemens NX, Maschienenbau, 3D-Druck, 3D-Konstruktion
@@ -386,21 +383,21 @@ Deutsche Rentenversicherung
 Reha, FbW";aktiv;Maßnahmenbeschreibung DMS;"Ronny Beyer
 Hermann Proß";BFW Schömberg;"Tamara Schumann
 t.schumann@pro-di.net
-07159 406-7396"
+07159 406-7396";;;;
 Maschinen- und Anlagenführer;C2;Umschulung;Reha;18 Monate;6 Monate;IHK-Zeugnis;Sorgt für einen reibungslosen Produktionsablauf - Fertigung-Ausbildung;"Fertigung, Produktion, Maschinen- und Anlagenführer, Maschinen- und Anlagenführerin, Fachkraft für Metalltechnik Fachrichtung Zerspanungstechnik, Industriemechaniker Einsatzgebiet Feingerätebau, Industriemechanikerin, CNC-Anwender Drehen und Fräsen (NCG), CNC-Anwenderin, CNC-Anwender für Fachkräfte (NCG), Industriefachkraft für CNC-Fertigung, Industriefachkraft für CNC- und CAM-Fertigung, Industriefachkraft für CAM-Fertigung, CNC
 ";"Agentur für Arbeit/Jobcenter
 Berufsgenossenschaften
 Deutsche Rentenversicherung
 Reha, FbW";aktiv;Maßnahmenbeschreibung DMS;Michael Volpp;BFW Schömberg;"Tamara Schumann
 t.schumann@pro-di.net
-07159 406-7397"
+07159 406-7397";;;;
 Fachkraft für Metalltechnik Fachrichtung Zerspanungstechnik;C2;Umschulung;Reha;18 Monate;2 Monate;IHK-Zeugnis;Bei der Herstellung von Metallwerkstücken gefragt - Fertigung-Ausbildung;"Fertigung, Produktion, Maschinen- und Anlagenführer, Maschinen- und Anlagenführerin, Fachkraft für Metalltechnik Fachrichtung Zerspanungstechnik, Industriemechaniker Einsatzgebiet Feingerätebau, Industriemechanikerin, CNC-Anwender Drehen und Fräsen (NCG), CNC-Anwenderin, CNC-Anwender für Fachkräfte (NCG), Industriefachkraft für CNC-Fertigung, Industriefachkraft für CNC- und CAM-Fertigung, Industriefachkraft für CAM-Fertigung, CNC
 ";"Agentur für Arbeit/Jobcenter
 Berufsgenossenschaften
 Deutsche Rentenversicherung
 Reha, FbW";aktiv;Maßnahmenbeschreibung DMS;Michael Volpp;BFW Schömberg;"Tamara Schumann
 t.schumann@pro-di.net
-07159 406-7398"
+07159 406-7398";;;;
 Industriemechaniker/-in Einsatzgebiet Feingerätebau;C2;Umschulung;Reha;24 Monate;6 Monate;"
 IHK-Zeugnis";Allrounder in der Metallverarbeitung - Fertigung-Ausbildung;"Fertigung, Produktion, Maschinen- und Anlagenführer, Maschinen- und Anlagenführerin, Fachkraft für Metalltechnik Fachrichtung Zerspanungstechnik, Industriemechaniker Einsatzgebiet Feingerätebau, Industriemechanikerin, CNC-Anwender Drehen und Fräsen (NCG), CNC-Anwenderin, CNC-Anwender für Fachkräfte (NCG), Industriefachkraft für CNC-Fertigung, Industriefachkraft für CNC- und CAM-Fertigung, Industriefachkraft für CAM-Fertigung, CNC
 ";"Agentur für Arbeit/Jobcenter
@@ -408,39 +405,39 @@ Berufsgenossenschaften
 Deutsche Rentenversicherung
 Reha, FbW";aktiv;Maßnahmenbeschreibung DMS;Michael Volpp;BFW Schömberg;"Tamara Schumann
 t.schumann@pro-di.net
-07159 406-7399"
+07159 406-7399";;;;
 CNC-Anwender/-in Drehen und Fräsen;D2;Anppassungsqualifizierung;Reha;44 Wochen;6 Wochen;"Hausinternes Zertifikat
 Zertifikat Nachwuchsstiftung Maschinenbau";Flexibel einsetzbare Zerspanungsexperten - Fertigung-Qualifizierung;"Fertigung, Produktion, Maschinen- und Anlagenführer, Maschinen- und Anlagenführerin, Fachkraft für Metalltechnik Fachrichtung Zerspanungstechnik, Industriemechaniker Einsatzgebiet Feingerätebau, Industriemechanikerin, CNC-Anwender Drehen und Fräsen (NCG), CNC-Anwenderin, CNC-Anwender für Fachkräfte (NCG), Industriefachkraft für CNC-Fertigung, Industriefachkraft für CNC- und CAM-Fertigung, Industriefachkraft für CAM-Fertigung, CNC
 ";"Berufsgenossenschaften
 Deutsche Rentenversicherung
 Reha, FbW";aktiv;Maßnahmenbeschreibung DMS;Michael Volpp;BFW Schömberg;"Tamara Schumann
 t.schumann@pro-di.net
-07159 406-7400"
+07159 406-7400";;;;
 Industriefachkraft (IHK) für CNC-Fertigung;D2;Anppassungsqualifizierung;Reha;26 Wochen;4 Wochen;"Hausinternes Zertifikat
 IHK-Zertifikat";Programmieren, Rüsten, Fertigen für CNC-Profis - Fertigungsqualifizierung;"Fertigung, Produktion, Maschinen- und Anlagenführer, Maschinen- und Anlagenführerin, Fachkraft für Metalltechnik Fachrichtung Zerspanungstechnik, Industriemechaniker Einsatzgebiet Feingerätebau, Industriemechanikerin, CNC-Anwender Drehen und Fräsen (NCG), CNC-Anwenderin, CNC-Anwender für Fachkräfte (NCG), Industriefachkraft für CNC-Fertigung, Industriefachkraft für CNC- und CAM-Fertigung, Industriefachkraft für CAM-Fertigung, CNC
 ";"Berufsgenossenschaften
 Deutsche Rentenversicherung
 Reha, FbW";aktiv;Maßnahmenbeschreibung DMS;Michael Volpp;BFW Schömberg;"Tamara Schumann
 t.schumann@pro-di.net
-07159 406-7401"
+07159 406-7401";;;;
 RehaStep;D3;Integrationsmaßnahme;Reha;9 Monate;ca. 6 Monate;Hausinternes Zertifikat;"Integrationsmaßnahme auf dem Arbeitsmarkt
 Integrationsstrategie entwickeln, Schulung berufsbezogener Grundlagen, überwiegend betriebliche Qualifizierung";Orientierung, Profiling, Neuorientierung, Wiedereinstieg, Einzelcoaching, Coaching, Berufserfahrung, Lebenserfahrung, Integrationsmaßnahme, Integration in Arbeit, zurück ins Arbeitsleben, Praktikum;"Agentur für Arbeit/Jobcenter
 Berufsgenossenschaften
 Deutsche Rentenversicherung
 Reha";aktiv;Maßnahmenbeschreibung DMS;Stephan Durst;BFW Schömberg;"Tamara Schumann
 t.schumann@pro-di.net
-07159 406-7402"
+07159 406-7402";;;;
 RehaStep+;D4;Integrationsmaßnahme;Reha;9 Monate;ca. 6 Monate;Hausinternes Zertifikat;"Integrationsmaßnahme für psychisch erkrankte Menschen auf dem Arbeitsmarkt
 Integrationsstrategie entwickeln, Schulung berufsbezogener Grundlagen, überwiegend betriebliche Qualifizierung";Orientierung, Profiling, Neuorientierung, Wiedereinstieg, Einzelcoaching, Coaching, Berufserfahrung, Lebenserfahrung, Integrationsmaßnahme, Integration in Arbeit, zurück ins Arbeitsleben, intensive psychologische Beratung und Begleitung;"Deutsche Rentenversicherung
 Reha";aktiv;Maßnahmenbeschreibung DMS;Stephan Durst;BFW Schömberg;"Tamara Schumann
 t.schumann@pro-di.net
-07159 406-7403"
+07159 406-7403";;;;
 Integrationsmaßnahme zur direkten Wiedereingliederung (IWR);D5;Integrationsmaßnahme;Reha;7 Monate;bis 6 Monate;Hausinternes Zertifikat;"Integrationsmaßnahme auf dem Arbeitsmarkt
 Integrationsstrategie entwickeln, Schulung berufsbezogener Grundlagen, überwiegend betriebliche Qualifizierung";Neuorientierung am Arbeitsmarkt, direkter Einstieg, Coaching, EDV-Grundlagen, Bewerbungs- und Persönlichkeitstrainings, Praxisphase im Betrieb;"Berufsgenossenschaften
 Deutsche Rentenversicherung
 Reha";aktiv;Maßnahmenbeschreibung DMS;Stephan Durst;BFW Schömberg;"Tamara Schumann
 t.schumann@pro-di.net
-07159 406-7404"
+07159 406-7404";;;;
 Reha-Einzelcoaching ;D7;Coaching;Reha;individuell stundenweise;-;;Intensive Unterstützung beim Finden eines geeigneten Ausbildungsplatzes;"Erarbeiten von Integrationsansätzen und deren Umsetzung
 Hilfe bei der Suche nach einem Umschulungsplatz, 
 Erhaltung, Erweiterung oder an technische Entwicklung angepasste berufliche Fertigkeiten und Kenntnisse
@@ -450,7 +447,7 @@ Befähigung zu einer anderen Tätigkeit";"Berufsgenossenschaften
 Deutsche Rentenversicherung
 Reha";aktiv;Maßnahmenbeschreibung DMS;Stephan Durst;BFW Schömberg;"Tamara Schumann
 t.schumann@pro-di.net
-07159 406-7405"
+07159 406-7405";;;;
 Rehabilitation in Betrieb und Berufsschule;D6;Vorbereitung;Reha;24 Monate (kann variieren);"lt. Ausbildungs-
 rahmenplan";"IHK Kammerabschluss in versch.
 Berufen
@@ -463,14 +460,14 @@ Suche Folgearbeitsplatz, Coaching";"Berufsgenossenschaften
 Deutsche Rentenversicherung
 Reha";aktiv;Maßnahmenbeschreibung DMS;Stephan Durst;BFW Schömberg;"Tamara Schumann
 t.schumann@pro-di.net
-07159 406-7406"
-;;;;;;;;;;;;;;
-;;;;;;;;;;inaktiv;;;;
-;;;;;;;;;;;;;;
-;;;;;;;;;;;;;;
-;;;;;;;;;;;;;;
-;;;;;;;;;;;;;;
-;;;;;;;;;;;;;;
-;;;;;;;;;;;;;;
-;;;;;;;;;;;;;;
-;;;;;;;;;;;;;;
+07159 406-7406";;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;inaktiv;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;
