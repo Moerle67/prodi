@@ -4,14 +4,15 @@ from django.urls import reverse
 # Create your models here.
 class Fachrichtung(models.Model):
     kategorie = models.CharField(verbose_name=("Kategorie"), max_length=50, primary_key=True)
-    bezeichnung = models.CharField(verbose_name=("Bezeichnung"), max_length=255)
-    kunde = models.CharField(verbose_name=("Kunde"), max_length=255)
-    aktiv = models.BooleanField(verbose_name=("Aktiv"))
+    bezeichnung = models.CharField(verbose_name=("Bezeichnung"), max_length=255, blank=True)
+    kunde = models.CharField(verbose_name=("Kunde"), max_length=255, blank=True)
+    aktiv = models.BooleanField(verbose_name=("Aktiv"), default=True)
     def __str__(self):
         return f"{self.kategorie} - {self.bezeichnung}"
     class Meta:
         verbose_name_plural = "Fachrichtungen"
         verbose_name = "Fachrichtung"
+        ordering = ['kategorie']
 
 class Kontakt(models.Model):
     name = models.CharField(verbose_name=("Name"), max_length=250)
