@@ -15,7 +15,7 @@ class Fachrichtung(models.Model):
         ordering = ['kategorie']
 
 class Kontakt(models.Model):
-    name = models.CharField(verbose_name=("Name"), max_length=250)
+    name = models.CharField(verbose_name=("Name"), max_length=250, primary_key=True)
     mail = models.CharField(verbose_name=("E-Mail"), max_length=250, blank=True)
     telefon = models.CharField(verbose_name=("Telefon"), max_length=50, blank=True)
     def __str__(self):
@@ -33,7 +33,7 @@ class Dokument(models.Model):
         verbose_name = "Dokument"
 
 class Organisation(models.Model):
-    bezeichnung = models.CharField(verbose_name=("Organisation"), max_length=255)
+    bezeichnung = models.CharField(verbose_name=("Organisation"), max_length=255, primary_key=True)
     ansprechpartner = models.ForeignKey(Kontakt, verbose_name=("Ansprechpartner"), on_delete=models.CASCADE)
     def __str__(self):
         return self.bezeichnung
@@ -63,6 +63,10 @@ class Kostentraeger(models.Model):
 class Reha(models.Model):
     massnahmentitel = models.TextField(verbose_name=("Maßnahmentitel"))
     fachrichtung = models.ForeignKey(Fachrichtung, verbose_name=("Fachrrichtung"), on_delete=models.CASCADE)
+    abrechnungsart = models.CharField(verbose_name=("Abrechnungsart"), max_length=50)
+    dauer = models.CharField(verbose_name=("Abrechnungsart"), max_length=50)
+    praxisdauer = models.CharField(verbose_name=("Praxisdauer"), max_length=50)
+    abschluss = models.TextField(verbose_name=("Abschluss"),blank=True)
     schlagrichtung = models.TextField(verbose_name=("inhalt. Schlagrichtung"))
     schlagwort = models.ManyToManyField(Schlagwort, verbose_name=("Schlagwort"))
     kostentraeger = models.ManyToManyField(Kostentraeger, verbose_name=("Geschäftfeld/Kostenträger"))

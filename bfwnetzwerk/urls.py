@@ -9,6 +9,6 @@ admin.site.index_title  =  "Datenbanken"
 
 urlpatterns = [
     path('form1', views.form1, name='index'),
-    path('up_reha', views.upload_file_reha, name='upload'),
+    path('up_reha', views.upload_file_reha, name='upload_reha'),
     path('up_fari', views.upload_file_fari, name='upload_fari'),
 ]

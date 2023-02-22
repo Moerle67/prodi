@@ -5,6 +5,8 @@ from django.shortcuts import render
 import csv
 
 from .forms import *
+from .models import *
+
 from .tools import handle_uploaded_file
 
 def form1(request):
@@ -44,20 +46,98 @@ def upload_file_reha(request):
 
 def read_csv_reha(f):
     # Alle Datensätze löschen
+    # Felder CSV
+    feld_massnahmentitel = 0
+    feld_kategorie = 1
+    feld_kategorie_bezeichnung = 2
+    feld_abrechnungsart = 3
+    feld_dauer = 4
+    feld_praxisdauer = 5
+    feld_abschluss = 6
+    feld_schlagrichtung = 7
+    feld_schlagwörter = 8
+    feld_kostentraeger = 9
+    feld_status = 10
+    feld_dokumente = 11
+    feld_maßnahmenverantwortlich = 12
+    feld_organisation = 13
+    feld_orga_ansprechpartner = 14
+
     Reha.objects.all().delete()
-    with open(f) as csvdatei:
+    with open(f, encoding='utf-8') as csvdatei:
         csv_reader_object = csv.reader(csvdatei, delimiter=';')
         print(type(csv_reader_object))
         zeile = 0
         for satz in csv_reader_object:
             zeile += 1
+            if zeile==1:
+                continue    # Überschriften
+            if len(satz[0].strip()) == 0:
+                continue    # Leer Datensätze
             ds = Reha()
             # Maßnamentitel 
-            ds.massnahmentitel = satz[0].strip()
+            ds.massnahmentitel = satz[feld_massnahmentitel].strip()
+            
             # Fachrichtung
-            fachrichtung = Fachrichtung.objects.get(kategorie=satz[1])
-            #if fachrichtung:
-                #print(fachrichtung.id)
+            print(f"Fachrichtung {satz[feld_kategorie].strip()}, {satz[feld_kategorie_bezeichnung].strip()} wurde eingelesen.")
+
+            # Fachrichtung            
+            fachrichtung, created = Fachrichtung.objects.get_or_create(kategorie=satz[feld_kategorie].strip().strip("\n"))
+            if created:
+                print(f"Fachrichtung {satz[feld_kategorie].strip()}, {satz[feld_kategorie_bezeichnung].strip()} wurde erstellt.")
+            fachrichtung.bezeichnung = satz[feld_kategorie_bezeichnung].strip().strip('\n')
+            fachrichtung.save()
+            ds.fachrichtung = fachrichtung
+
+            # abrechnungsart
+            ds.abrechnungsart = satz[feld_abrechnungsart].strip()
+
+            # Dauer
+            ds.dauer = satz[feld_dauer].strip()
+
+            # Praxisdauer 
+            ds.praxisdauer = satz[feld_praxisdauer].strip()
+
+            # Abschluss
+            ds.abschluss = satz[feld_abschluss].strip()
+
+            # Schlagrichtung
+            ds.schlagrichtung = satz[feld_schlagrichtung]
+
+
+            if satz[feld_status] == "aktiv":
+                ds.status = True
+            else:
+                ds.status = False
+
+            # Dokumente
+            dokument_field = Dokument.objects.filter(bezeichnung=satz[feld_dokumente].strip())
+            if len(dokument_field) == 0:
+                dokument = Dokument()
+                dokument.bezeichnung = satz[feld_dokumente]
+                dokument.save()
+                ds.dokumente = dokument
+                print(f"Dokumente {satz[feld_dokumente]} erstellt.")
+            else:
+                ds.dokumente = dokument_field[0]
+
+            # Maßnahmenverantwortlicher
+            mv_name= satz[feld_maßnahmenverantwortlich].strip()
+            mv_ds = Kontakt.objects.filter(name=mv_name)
+            if len(mv_ds) == 0:
+                mv_ds = Kontakt()
+                mv_ds.name=satz[feld_maßnahmenverantwortlich]
+                mv_ds.save()
+                ds.verantwortlicher = mv_ds
+            else:
+                ds.verantwortlicher = mv_ds[0]
+            
+            # Organisation
+
+            organisation = satz[feld_organisation].strip()
+            organisation_ds = Organisation.objects.filter()
+            if len(organisation_ds) == 0:
+                orga_ds = Organisation()
 
             # ds.save()
 
@@ -82,19 +162,20 @@ def upload_file_fari(request):
 def read_csv_fari(f):
     # Alle Datensätze löschen
     Fachrichtung.objects.all().delete()
-    with open(f) as csvdatei:
+    with open(f, encoding='utf-8') as csvdatei:
         csv_reader_object = csv.reader(csvdatei, delimiter=';')
         zeile = 0
         for satz in csv_reader_object:
             zeile += 1
             if zeile == 1: #Überschriften
                 continue
-            ds = Fachrichtung()
-            # Maßnamentitel 
-            ds.kategorie = satz[0].strip()
-            ds.bezeichnung = satz[1].strip()
-            ds.kunde=satz[2].strip()
-            ds.save()
+            if len(satz[0].strip())>0:
+                ds = Fachrichtung()
+                # Maßnamentitel 
+                ds.kategorie = satz[0].strip()
+                ds.bezeichnung = satz[1].strip()
+                ds.kunde=satz[2].strip()
+                ds.save()
             # Fachrichtung
     print(f"Es wurden {zeile} Datensätze erfasst.")
     
