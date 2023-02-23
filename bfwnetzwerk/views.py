@@ -140,6 +140,7 @@ def read_csv_reha(f):
             organisation_ds = Organisation.objects.filter(bezeichnung=organisation)
             if len(organisation_ds) == 0:
                 orga_ds = Organisation()
+                orga_ds.bezeichnung = organisation
                 kontakt_daten = satz[feld_orga_ansprechpartner].split('\n')
                 kt_ds = Kontakt.objects.filter(name=kontakt_daten[0])
                 if len(kt_ds) == 0:
