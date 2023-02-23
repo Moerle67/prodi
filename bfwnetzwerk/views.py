@@ -160,6 +160,10 @@ def read_csv_reha(f):
             # fertig
             ds.save()
 
+            # Schlagwörter
+            liste_schlagwörter = satz[feld_schlagwörter].strip(',')
+            raise
+
         print(f"Es wurden {zeile} Datensätze erfasst.")
 
 def upload_file_fari(request):
