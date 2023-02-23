@@ -70,10 +70,10 @@ def read_csv_reha(f):
         zeile = 0
         for satz in csv_reader_object:
             zeile += 1
-            if zeile==1:
+            if zeile == 1:
                 continue    # Überschriften
             if len(satz[0].strip()) == 0:
-                continue    # Leer Datensätze
+               continue    # Leer Datensätze
             ds = Reha()
             # Maßnamentitel 
             ds.massnahmentitel = satz[feld_massnahmentitel].strip()
@@ -122,6 +122,7 @@ def read_csv_reha(f):
                 ds.dokumente = dokument_field[0]
 
             # Maßnahmenverantwortlicher
+
             mv_name= satz[feld_maßnahmenverantwortlich].strip()
             mv_ds = Kontakt.objects.filter(name=mv_name)
             if len(mv_ds) == 0:
@@ -135,11 +136,28 @@ def read_csv_reha(f):
             # Organisation
 
             organisation = satz[feld_organisation].strip()
-            organisation_ds = Organisation.objects.filter()
+            print(zeile, organisation)
+            organisation_ds = Organisation.objects.filter(bezeichnung=organisation)
             if len(organisation_ds) == 0:
                 orga_ds = Organisation()
-
-            # ds.save()
+                kontakt_daten = satz[feld_orga_ansprechpartner].split('\n')
+                kt_ds = Kontakt.objects.filter(name=kontakt_daten[0])
+                if len(kt_ds) == 0:
+                    kt_ds = Kontakt()
+                    kt_ds.name=kontakt_daten[0]
+                    kt_ds.mail = kontakt_daten[1]
+                    kt_ds.telefon = kontakt_daten[2]
+                    kt_ds.save()
+                    orga_ds.ansprechpartner = kt_ds
+                else:
+                    orga_ds.ansprechpartner = kt_ds[0]
+                orga_ds.save()
+                ds.organisation=orga_ds
+            else:
+                ds.organisation=organisation_ds[0]
+            
+            # fertig
+            ds.save()
 
         print(f"Es wurden {zeile} Datensätze erfasst.")
 
