@@ -161,8 +161,11 @@ def read_csv_reha(f):
             ds.save()
 
             # Schlagwörter
-            liste_schlagwörter = satz[feld_schlagwörter].strip(',')
-            raise
+            liste_schlagwörter = satz[feld_schlagwörter].split(',')
+            for schlagwort in liste_schlagwörter:
+                schlagwort = schlagwort.strip()
+                ds_schlagwort, create = Schlagwort.objects.get_or_create(schlagwort=schlagwort)
+                ds.schlagwort.add(ds_schlagwort)
 
         print(f"Es wurden {zeile} Datensätze erfasst.")
 
