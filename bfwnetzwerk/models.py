@@ -51,8 +51,9 @@ class Schlagwort(models.Model):
         ordering = ['schlagwort']
 
 class Kostentraeger(models.Model):
-    kostentraeger = models.CharField(verbose_name=("Geschäftsfeld/Kostenträger"), max_length=250)
-    ansprechpartner = models.ForeignKey(Kontakt, verbose_name=("Ansprechpartner"), on_delete=models.CASCADE)
+    kostentraeger = models.CharField(verbose_name=("Geschäftsfeld/Kostenträger"), max_length=250, unique=True)
+    anmerkung = models.CharField(verbose_name=('Anmerkung'), max_length=250, blank=True)
+    
     def __str__(self):
         return f"{self.kostentraeger}"
     class Meta:
@@ -64,7 +65,7 @@ class Reha(models.Model):
     massnahmentitel = models.TextField(verbose_name=("Maßnahmentitel"))
     fachrichtung = models.ForeignKey(Fachrichtung, verbose_name=("Fachrrichtung"), on_delete=models.CASCADE)
     abrechnungsart = models.CharField(verbose_name=("Abrechnungsart"), max_length=50)
-    dauer = models.CharField(verbose_name=("Abrechnungsart"), max_length=50)
+    dauer = models.CharField(verbose_name=("Dauer"), max_length=50)
     praxisdauer = models.CharField(verbose_name=("Praxisdauer"), max_length=50)
     abschluss = models.TextField(verbose_name=("Abschluss"),blank=True)
     schlagrichtung = models.TextField(verbose_name=("inhalt. Schlagrichtung"))

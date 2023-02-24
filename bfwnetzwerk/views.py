@@ -167,6 +167,13 @@ def read_csv_reha(f):
                 ds_schlagwort, create = Schlagwort.objects.get_or_create(schlagwort=schlagwort)
                 ds.schlagwort.add(ds_schlagwort)
 
+            # Kostenträger
+            liste_kostentraeger = satz[feld_kostentraeger].split('\n')
+            for kostentraeger in liste_kostentraeger:
+                kostentraeger = kostentraeger.strip()
+                ds_kostentraeger, create = Kostentraeger.objects.get_or_create(kostentraeger=kostentraeger)
+                ds.kostentraeger.add(ds_kostentraeger)
+
         print(f"Es wurden {zeile} Datensätze erfasst.")
 
 def upload_file_fari(request):
