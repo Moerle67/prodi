@@ -163,7 +163,7 @@ def read_csv_reha(f):
             # Schlagwörter
             liste_schlagwörter = satz[feld_schlagwörter].split(',')
             for schlagwort in liste_schlagwörter:
-                schlagwort = schlagwort.strip()
+                schlagwort = schlagwort.strip()[:240]
                 ds_schlagwort, create = Schlagwort.objects.get_or_create(schlagwort=schlagwort)
                 ds.schlagwort.add(ds_schlagwort)
 

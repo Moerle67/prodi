@@ -42,7 +42,7 @@ class Organisation(models.Model):
         verbose_name = "Organisation"
 
 class Schlagwort(models.Model):
-    schlagwort = models.CharField(verbose_name=("Schlagwort"), max_length=50, unique=True)
+    schlagwort = models.CharField(verbose_name=("Schlagwort"), max_length=250, unique=True)
     def __str__(self):
         return f"{self.schlagwort}"
     class Meta:
