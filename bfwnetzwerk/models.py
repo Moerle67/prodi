@@ -80,5 +80,6 @@ class Reha(models.Model):
     class Meta:
         verbose_name_plural = "Rehas"
         verbose_name = "Reha"
+ 
 
 
