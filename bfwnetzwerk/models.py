@@ -81,5 +81,13 @@ class Reha(models.Model):
         verbose_name_plural = "Rehas"
         verbose_name = "Reha"
  
-
+class Vorschlag(models.Model):
+    vorschlag = models.CharField(verbose_name=("Vorschlag"), max_length=50)
+    begruendung = models.TextField(verbose_name=("Begründung"))
+    vorschlagdatum = models.DateField(verbose_name=("vorgeschlagen am"), auto_now=False, auto_now_add=True)
+    def __str__(self):
+        return f"{self.vorschlag} ({self.vorschlagdatum})"
+    class Meta:
+        verbose_name_plural = "Vorschläge"
+        verbose_name = "Vorschlag"
 

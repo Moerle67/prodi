@@ -4,6 +4,8 @@ from django.contrib import admin
 from .models import *
 
 admin.site.register(Fachrichtung)
+admin.site.register(Vorschlag)
+
 @admin.register(Kontakt)
 class KontaktAdmin(admin.ModelAdmin):
    list_display = ['name', 'mail', 'telefon']
