@@ -96,11 +96,11 @@ class Vorschlag(models.Model):
 class Vorschlagbearbeitung(models.Model):
     vorschlag = models.ForeignKey(Vorschlag, verbose_name=("Vorschlag"), on_delete=models.CASCADE)
     anmerkung = models.TextField(verbose_name=("Anmerkung"))
-    erledigt = models.BooleanField(verbose_name=("Erledigt"), default=True)
+    erledigt = models.BooleanField(verbose_name=("Erledigt"), default=False)
     datum = models.DateField(verbose_name=("Datum"), auto_now=False, auto_now_add=True)
     user = models.ForeignKey(User, verbose_name=("Benutzer"), editable=False, null=True, blank=True, on_delete=models.CASCADE)
     def __str__(self):
-        return f"{self.vorschlag.vorschlag} - {self.anmerkung} / {self.erledigt}"
+        return f"{self.vorschlag.vorschlag} - {self.anmerkung} - {self.user}/ {self.erledigt}"
     class Meta:
         verbose_name_plural = "V.Bearbeitungen"
         verbose_name = "V.Bearbeitung"
