@@ -1,5 +1,6 @@
 from django.db import models
 from django.urls import reverse
+from django.contrib.auth.models import User
 
 # Create your models here.
 class Fachrichtung(models.Model):
@@ -85,9 +86,22 @@ class Vorschlag(models.Model):
     vorschlag = models.CharField(verbose_name=("Vorschlag"), max_length=50)
     begruendung = models.TextField(verbose_name=("Begründung"))
     vorschlagdatum = models.DateField(verbose_name=("vorgeschlagen am"), auto_now=False, auto_now_add=True)
+    user = models.ForeignKey(User, verbose_name=("Benutzer"), editable=False,null=True,blank=True, on_delete=models.CASCADE)
     def __str__(self):
-        return f"{self.vorschlag} ({self.vorschlagdatum})"
+        return f"{self.vorschlag}/{self.user} ({self.vorschlagdatum})"
     class Meta:
         verbose_name_plural = "Vorschläge"
         verbose_name = "Vorschlag"
+
+class Vorschlagbearbeitung(models.Model):
+    vorschlag = models.ForeignKey(Vorschlag, verbose_name=("Vorschlag"), on_delete=models.CASCADE)
+    anmerkung = models.TextField(verbose_name=("Anmerkung"))
+    erledigt = models.BooleanField(verbose_name=("Erledigt"), default=True)
+    datum = models.DateField(verbose_name=("Datum"), auto_now=False, auto_now_add=True)
+    user = models.ForeignKey(User, verbose_name=("Benutzer"), editable=False, null=True, blank=True, on_delete=models.CASCADE)
+    def __str__(self):
+        return f"{self.vorschlag.vorschlag} - {self.anmerkung} / {self.erledigt}"
+    class Meta:
+        verbose_name_plural = "V.Bearbeitungen"
+        verbose_name = "V.Bearbeitung"
 
