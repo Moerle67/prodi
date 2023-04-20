@@ -79,8 +79,8 @@ class Reha(models.Model):
     def __str__(self):
         return f"{self.massnahmentitel} - {self.organisation}"
     class Meta:
-        verbose_name_plural = "Maßnahme"
-        verbose_name = "Maßnahmen"
+        verbose_name_plural = "Produkte"
+        verbose_name = "Produkt"
  
 class Vorschlag(models.Model):
     vorschlag = models.CharField(verbose_name=("Vorschlag"), max_length=50)

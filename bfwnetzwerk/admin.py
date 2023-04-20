@@ -39,5 +39,5 @@ class OrganisationAdmin(admin.ModelAdmin):
 class RehaAdmin(admin.ModelAdmin):
    list_display = ['massnahmentitel', 'fachrichtung', 'organisation', 'verantwortlicher', 'status']
    search_fields = ['massnahmentitel', 'schlagrichtung', 'schlagwort']
-   list_filter = ['schlagwort','kostentraeger', 'organisation', 'dauer', 'verantwortlicher','status', 'organisation']
+   list_filter = ['kostentraeger', 'organisation', 'dauer', 'verantwortlicher','status', 'organisation','schlagwort']
    admin.site.register(Schlagwort)

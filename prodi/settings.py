@@ -124,3 +124,6 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+ADMIN_INDEX_SHOW_MENU = False
+ADMIN_INDEX_HIDE_APP_INDEX_PAGES = False
