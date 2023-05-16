@@ -15,29 +15,17 @@ class Fachrichtung(models.Model):
         verbose_name = "Fachrichtung"
         ordering = ['kategorie']
 
-class Kontakt(models.Model):
-    name = models.CharField(verbose_name=("Name"), max_length=250, primary_key=True)
-    mail = models.CharField(verbose_name=("E-Mail"), max_length=250, blank=True)
-    telefon = models.CharField(verbose_name=("Telefon"), max_length=50, blank=True)
-    def __str__(self):
-        return f"{self.name}"
-    class Meta:
-        verbose_name_plural = "Kontakte"
-        verbose_name = "Kontakt"
-
-class Dokument(models.Model):
-    bezeichnung = models.CharField(verbose_name=("Bezeichnung"), max_length=250)
-    def __str__(self):
-        return f"{self.bezeichnung}"
-    class Meta:
-        verbose_name_plural = "Dokumente"
-        verbose_name = "Dokument"
 
 class Organisation(models.Model):
     bezeichnung = models.CharField(verbose_name=("Organisation"), max_length=255, primary_key=True)
-    ansprechpartner = models.ForeignKey(Kontakt, verbose_name=("Ansprechpartner"), on_delete=models.CASCADE)
+    ansprechpartner = models.CharField(verbose_name="Ansprechpartner", max_length=100)
+    ansprechpartner_mail = models.CharField(verbose_name="Ansprechpartner Mail", max_length=50)
+    ansprechpartner_telefon = models.CharField(verbose_name="Ansprechpartner Telefon", max_length=50)
+    ansprechpartner2 = models.CharField(verbose_name="Ansprechpartner2", max_length=100)
+    ansprechpartner2_mail = models.CharField(verbose_name="Ansprechpartner2 Mail", max_length=50)
+    ansprechpartner2_telefon = models.CharField(verbose_name="Ansprechpartner2 Telefon", max_length=50)
     def __str__(self):
-        return self.bezeichnung
+        return f"{self.bezeichnung}/{self.ansprechpartner} - {self.ansprechpartner_mail}"
     class Meta:
         verbose_name_plural = "Organisationen"
         verbose_name = "Organisation"
@@ -73,8 +61,7 @@ class Reha(models.Model):
     schlagwort = models.ManyToManyField(Schlagwort, verbose_name=("Schlagwort"))
     kostentraeger = models.ManyToManyField(Kostentraeger, verbose_name=("Geschäftfeld/Kostenträger"))
     status = models.BooleanField(verbose_name=("aktiv"))
-    dokumente = models.ForeignKey(Dokument, verbose_name=("Dokumente"), on_delete=models.CASCADE)
-    verantwortlicher = models.ForeignKey(Kontakt, verbose_name=("Maßnahmenverantwortlicher"), on_delete=models.CASCADE)
+    dokumente =   models.URLField(verbose_name="Dokument", max_length=200)
     organisation = models.ForeignKey(Organisation, verbose_name=("Organisation"), on_delete=models.CASCADE)
     def __str__(self):
         return f"{self.massnahmentitel} - {self.organisation}"
