@@ -19,11 +19,11 @@ class Fachrichtung(models.Model):
 class Organisation(models.Model):
     bezeichnung = models.CharField(verbose_name=("Organisation"), max_length=255, primary_key=True)
     ansprechpartner = models.CharField(verbose_name="Ansprechpartner", max_length=100)
-    ansprechpartner_mail = models.CharField(verbose_name="Ansprechpartner Mail", max_length=50)
-    ansprechpartner_telefon = models.CharField(verbose_name="Ansprechpartner Telefon", max_length=50)
-    ansprechpartner2 = models.CharField(verbose_name="Ansprechpartner2", max_length=100)
-    ansprechpartner2_mail = models.CharField(verbose_name="Ansprechpartner2 Mail", max_length=50)
-    ansprechpartner2_telefon = models.CharField(verbose_name="Ansprechpartner2 Telefon", max_length=50)
+    ansprechpartner_mail = models.CharField(verbose_name="Ansprechpartner Mail", max_length=50, blank=True)
+    ansprechpartner_telefon = models.CharField(verbose_name="Ansprechpartner Telefon", max_length=50, blank=True)
+    ansprechpartner2 = models.CharField(verbose_name="Ansprechpartner2", max_length=100, blank=True)
+    ansprechpartner2_mail = models.CharField(verbose_name="Ansprechpartner2 Mail", max_length=50, blank=True)
+    ansprechpartner2_telefon = models.CharField(verbose_name="Ansprechpartner2 Telefon", max_length=50, blank=True)
     def __str__(self):
         return f"{self.bezeichnung}/{self.ansprechpartner} - {self.ansprechpartner_mail}"
     class Meta:
