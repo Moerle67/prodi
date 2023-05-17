@@ -52,7 +52,7 @@ class Kostentraeger(models.Model):
 
 class Reha(models.Model):
     massnahmentitel = models.TextField(verbose_name=("Maßnahmentitel"))
-    fachrichtung = models.ForeignKey(Fachrichtung, verbose_name=("Fachrrichtung"), on_delete=models.CASCADE)
+    fachrichtung = models.ManyToManyField(Fachrichtung, verbose_name=("Produkt(e)"), blank = True)
     abrechnungsart = models.CharField(verbose_name=("Abrechnungsart"), max_length=50)
     dauer = models.CharField(verbose_name=("Dauer"), max_length=50)
     praxisdauer = models.CharField(verbose_name=("Praxisdauer"), max_length=50)

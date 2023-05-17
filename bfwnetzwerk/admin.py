@@ -19,7 +19,7 @@ class OrganisationAdmin(admin.ModelAdmin):
       
 @admin.register(Reha)
 class RehaAdmin(admin.ModelAdmin):
-   list_display = ['massnahmentitel', 'fachrichtung', 'organisation', 'status']
-   search_fields = ['massnahmentitel', 'schlagwort__schlagwort']
+   list_display = ['massnahmentitel', 'schlagrichtung', 'organisation']
+   search_fields = ['massnahmentitel', 'schlagwort__schlagwort', 'schlagrichtung']
    list_filter = ['kostentraeger', 'organisation', 'dauer','status', 'organisation', 'schlagwort']
 
