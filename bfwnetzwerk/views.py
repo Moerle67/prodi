@@ -154,10 +154,18 @@ def read_csv_reha(f):
             liste_schlagwoerter = satz[feld_schlagwort].split(',')
             for schlagwort in liste_schlagwoerter:
                 schlagwort = schlagwort.strip()[:240]
-                ds_schlagwort, create = Schlagwort.objects.get_or_create(schlagwort=schlagwort)
+                ds_schlagwort, create = Schlagwort.objects.get_or_create(schlagwort=schlagwort.strip())
                 ds.schlagwoerter.add(ds_schlagwort)
-
-
+            del liste_schlagwoerter  
+            
+            # Abrechnungsart
+            liste_abrechnungsart = satz[feld_abrechnungsart].split(',')
+            for abrechnungsart in liste_abrechnungsart:
+                schlagwort = abrechnungsart.strip()[:240]
+                ds_abrechnungsart, create = Abrechnungsart.objects.get_or_create(kunde=abrechnungsart.strip())
+                ds.abrechnungsart.add(ds_abrechnungsart)
+            del liste_abrechnungsart
+            #
             # fachrichtung, created = Fachrichtung.objects.get_or_create(kategorie=satz[feld_kategorie].strip().strip("\n"))
             # if created:
             #     print(f"Fachrichtung {satz[feld_kategorie].strip()}, {satz[feld_kategorie_bezeichnung].strip()} wurde erstellt.")
