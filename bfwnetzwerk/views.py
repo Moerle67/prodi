@@ -154,135 +154,24 @@ def read_csv_reha(f):
             liste_schlagwoerter = satz[feld_schlagwort].split(',')
             for schlagwort in liste_schlagwoerter:
                 schlagwort = schlagwort.strip()[:240]
-                ds_schlagwort, create = Schlagwort.objects.get_or_create(schlagwort=schlagwort.strip())
+                ds_schlagwort, create = Schlagwort.objects.get_or_create(schlagwort=schlagwort)
                 ds.schlagwoerter.add(ds_schlagwort)
             del liste_schlagwoerter  
             
             # Abrechnungsart
             liste_abrechnungsart = satz[feld_abrechnungsart].split(',')
             for abrechnungsart in liste_abrechnungsart:
-                schlagwort = abrechnungsart.strip()[:240]
-                ds_abrechnungsart, create = Abrechnungsart.objects.get_or_create(kunde=abrechnungsart.strip())
+                abrechnungsart = abrechnungsart.strip()[:240]
+                ds_abrechnungsart, create = Abrechnungsart.objects.get_or_create(kunde=abrechnungsart)
                 ds.abrechnungsart.add(ds_abrechnungsart)
             del liste_abrechnungsart
-            #
-            # fachrichtung, created = Fachrichtung.objects.get_or_create(kategorie=satz[feld_kategorie].strip().strip("\n"))
-            # if created:
-            #     print(f"Fachrichtung {satz[feld_kategorie].strip()}, {satz[feld_kategorie_bezeichnung].strip()} wurde erstellt.")
-            # fachrichtung.bezeichnung = satz[feld_kategorie_bezeichnung].strip().strip('\n')
-            # fachrichtung.save()
-            # ds.fachrichtung = fachrichtung
 
-            # # abrechnungsart
-            # ds.abrechnungsart = satz[feld_abrechnungsart].strip()
-
-            # # Dauer
-            # ds.dauer = satz[feld_dauer].strip()
-
-            # # Praxisdauer 
-            # ds.praxisdauer = satz[feld_praxisdauer].strip()
-
-            # # Abschluss
-            # ds.abschluss = satz[feld_abschluss].strip()
-
-            # # Schlagrichtung
-            # ds.schlagrichtung = satz[feld_schlagrichtung]
-
-
-            
-            # # Dokumente
-            # dokument_field = Dokument.objects.filter(bezeichnung=satz[feld_dokumente].strip())
-            # if len(dokument_field) == 0:
-            #     dokument = Dokument()
-            #     dokument.bezeichnung = satz[feld_dokumente]
-            #     dokument.save()
-            #     ds.dokumente = dokument
-            #     print(f"Dokumente {satz[feld_dokumente]} erstellt.")
-            # else:
-            #     ds.dokumente = dokument_field[0]
-
-            # # Maßnahmenverantwortlicher
-
-            # mv_name= satz[feld_maßnahmenverantwortlich].strip()
-            # mv_ds = Kontakt.objects.filter(name=mv_name)
-            # if len(mv_ds) == 0:
-            #     mv_ds = Kontakt()
-            #     mv_ds.name=satz[feld_maßnahmenverantwortlich]
-            #     mv_ds.save()
-            #     ds.verantwortlicher = mv_ds
-            # else:
-            #     ds.verantwortlicher = mv_ds[0]
-            
-            # # Organisation
-
-            # organisation = satz[feld_organisation].strip()
-            # print(zeile, organisation)
-            # organisation_ds = Organisation.objects.filter(bezeichnung=organisation)
-            # if len(organisation_ds) == 0:
-            #     orga_ds = Organisation()
-            #     orga_ds.bezeichnung = organisation
-            #     kontakt_daten = satz[feld_orga_ansprechpartner].split('\n')
-            #     kt_ds = Kontakt.objects.filter(name=kontakt_daten[0])
-            #     if len(kt_ds) == 0:
-            #         kt_ds = Kontakt()
-            #         kt_ds.name=kontakt_daten[0]
-            #         kt_ds.mail = kontakt_daten[1]
-            #         kt_ds.telefon = kontakt_daten[2]
-            #         kt_ds.save()
-            #         orga_ds.ansprechpartner = kt_ds
-            #     else:
-            #         orga_ds.ansprechpartner = kt_ds[0]
-            #     orga_ds.save()
-            #     ds.organisation=orga_ds
-            # else:
-            #     ds.organisation=organisation_ds[0]
-            
-            # # fertig
-            # ds.save()
-
-            
-            # # Kostenträger
-            # liste_kostentraeger = satz[feld_kostentraeger].split('\n')
-            # for kostentraeger in liste_kostentraeger:
-            #     kostentraeger = kostentraeger.strip()
-            #     ds_kostentraeger, create = Kostentraeger.objects.get_or_create(kostentraeger=kostentraeger)
-            #     ds.kostentraeger.add(ds_kostentraeger)
+            # Kostenträger
+            liste_kt = satz[feld_kostentraeger].split(',')
+            for kt in liste_kt:
+                kt = kt.strip()[:240]
+                ds_kt, create = Kostentraeger.objects.get_or_create(kostentraeger=kt)
+                ds.kostentraeger.add(ds_kt)
+            del liste_kt
 
         print(f"Es wurden {zeile} Datensätze erfasst.")
-
-def upload_file_fari(request):
-    print(request.method)
-    if request.method == 'POST':
-        form = UploadFileForm(request.FILES)
-        # print(form.is_valid())
-        if True:
-            f = request.FILES['file']
-            f_name=handle_uploaded_file(f)
-            read_csv_fari(f_name)
-            return HttpResponseRedirect('/success/url/')
-        else:
-            print(form.errors)
-    else:
-        form = UploadFileForm()
-    return render(request, 'form1.html', {'form': form})
-
-def read_csv_fari(f):
-    # Alle Datensätze löschen
-    Fachrichtung.objects.all().delete()
-    with open(f, encoding='utf-8') as csvdatei:
-        csv_reader_object = csv.reader(csvdatei, delimiter=';')
-        zeile = 0
-        for satz in csv_reader_object:
-            zeile += 1
-            if zeile == 1: #Überschriften
-                continue
-            if len(satz[0].strip())>0:
-                ds = Fachrichtung()
-                # Maßnamentitel 
-                ds.kategorie = satz[0].strip()
-                ds.bezeichnung = satz[1].strip()
-                ds.kunde=satz[2].strip()
-                ds.save()
-            # Fachrichtung
-    print(f"Es wurden {zeile} Datensätze erfasst.")
-    
