@@ -62,6 +62,19 @@ class Kostentraeger(models.Model):
     def get_absolute_url(self):
         return reverse("kostentraeger_detail", kwargs={"pk": self.pk})
 
+class Abschluss(models.Model):
+    name = models.CharField(verbose_name="Abschluss", max_length=50)
+    bemerkung = models.TextField(verbose_name="Bemerkung")
+    class Meta:
+        verbose_name = "Abschluss"
+        verbose_name_plural = "Abschlüsse"
+
+    def __str__(self):
+        return self.name
+
+    def get_absolute_url(self):
+        return reverse("Abschluss_detail", kwargs={"pk": self.pk})
+
 class Produkt(models.Model):
     massnahmentitel = models.TextField(verbose_name=("Maßnahmentitel"))
     massnahmeart = models.ForeignKey(Massnahmeart, verbose_name="Maßnahmenart", on_delete=models.RESTRICT)
@@ -71,6 +84,7 @@ class Produkt(models.Model):
     kostentraeger = models.ManyToManyField(Kostentraeger, verbose_name="Kostenträger")
     dauer = models.CharField(verbose_name="Dauer", max_length=50)
     praxisdauer = models.CharField(verbose_name="Praxisdauer", max_length=50, blank=True)
+    abschluss = models.ManyToManyField(Abschluss, verbose_name="Abschluß / Zertifikat")
     status = models.BooleanField(verbose_name="Status")
     dokument = models.URLField(verbose_name="Dokument", max_length=200)
     organisation = models.ForeignKey(Organisation, verbose_name="Organisation", on_delete=models.RESTRICT)
