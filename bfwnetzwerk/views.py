@@ -29,14 +29,11 @@ def form1(request):
 
 
 def upload_file_prod(request):
-    print(request.method)
     if request.method == 'POST':
         form = UploadFileForm(request.FILES)
-        # print(form.is_valid())
         if True:
             f = request.FILES['file']
             f_name=handle_uploaded_file(f)
-            print(f_name)
             read_csv_reha(f_name)
             return HttpResponseRedirect('/success/url/')
         else:
@@ -67,7 +64,6 @@ def read_csv_reha(f):
     Produkt.objects.all().delete()
     with open(f, encoding='utf-8') as csvdatei:
         csv_reader_object = csv.reader(csvdatei, delimiter=';')
-        print(type(csv_reader_object))
         zeile = 0
         for satz in csv_reader_object:
             zeile += 1
@@ -167,11 +163,19 @@ def read_csv_reha(f):
             del liste_abrechnungsart
 
             # Kostenträger
-            liste_kt = satz[feld_kostentraeger].split(',')
+            liste_kt = satz[feld_kostentraeger].split('\n')
             for kt in liste_kt:
                 kt = kt.strip()[:240]
                 ds_kt, create = Kostentraeger.objects.get_or_create(kostentraeger=kt)
                 ds.kostentraeger.add(ds_kt)
             del liste_kt
+
+            # Abschluss
+            liste_abschluss = satz[feld_abschluss].split('\n')
+            for abschluss in liste_abschluss:
+                abschluss = abschluss.strip()[:240]
+                ds_abschluss, create = Abschluss.objects.get_or_create(name=abschluss)
+                ds.abschluss.add(ds_abschluss)
+            del liste_abschluss
 
         print(f"Es wurden {zeile} Datensätze erfasst.")
