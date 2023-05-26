@@ -4,7 +4,7 @@ from django.contrib.auth.models import User
 
 # Create your models here.
 class Massnahmeart(models.Model):
-    art = models.CharField(verbose_name=("Kategorie"), max_length=50, primary_key=True)
+    art = models.CharField(verbose_name=("Kategorie"), max_length=250, primary_key=True)
     bezeichnung = models.CharField(verbose_name=("Bezeichnung"), max_length=255, blank=True)
     def __str__(self):
         return f"{self.art}"
@@ -63,7 +63,7 @@ class Kostentraeger(models.Model):
         return reverse("kostentraeger_detail", kwargs={"pk": self.pk})
 
 class Abschluss(models.Model):
-    name = models.CharField(verbose_name="Abschluss", max_length=50)
+    name = models.CharField(verbose_name="Abschluss", max_length=250)
     bemerkung = models.TextField(verbose_name="Bemerkung")
     class Meta:
         verbose_name = "Abschluss"
@@ -82,8 +82,8 @@ class Produkt(models.Model):
     schlagwoerter = models.ManyToManyField(Schlagwort, verbose_name="Schlagwörter")
     abrechnungsart = models.ManyToManyField(Abrechnungsart, verbose_name="Produkt / Abrechnungsart")
     kostentraeger = models.ManyToManyField(Kostentraeger, verbose_name="Kostenträger")
-    dauer = models.CharField(verbose_name="Dauer", max_length=50)
-    praxisdauer = models.CharField(verbose_name="Praxisdauer", max_length=50, blank=True)
+    dauer = models.CharField(verbose_name="Dauer", max_length=150)
+    praxisdauer = models.CharField(verbose_name="Praxisdauer", max_length=150, blank=True)
     abschluss = models.ManyToManyField(Abschluss, verbose_name="Abschluß / Zertifikat")
     status = models.BooleanField(verbose_name="Status")
     dokument = models.URLField(verbose_name="Dokument", max_length=200)

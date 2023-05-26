@@ -74,14 +74,14 @@ def read_csv_reha(f):
             ds = Produkt()
             
             # Maßnamentitel 
-            ds.massnahmentitel = satz[feld_massnahmentitel].strip()
+            ds.massnahmentitel = satz[feld_massnahmentitel].strip()[:240]
             
             # Massnahmeart
-            massnahmeart = satz[feld_massnahmeart].strip()
+            massnahmeart = satz[feld_massnahmeart].strip()[:240]
             ds_massnahmeart = Massnahmeart.objects.filter(art=massnahmeart)
             if len(ds_massnahmeart) == 0:
                 # Noch nicht vorhaneden
-                ds_massnahmeart = Massnahmeart()
+                ds_massnahmeart = Massnahmeart()pip 
                 ds_massnahmeart.art = massnahmeart # type: ignore
                 ds_massnahmeart.save()
                 ds.massnahmeart = ds_massnahmeart
@@ -102,10 +102,10 @@ def read_csv_reha(f):
             # Many to many
             
             # Dauer
-            ds.dauer = satz[feld_dauer].strip()
+            ds.dauer = satz[feld_dauer].strip()[:140]
             
             # Praxisdauer
-            ds.praxisdauer = satz[feld_praxisdauer].strip()
+            ds.praxisdauer = satz[feld_praxisdauer].strip()[:140]
 
             # Abschluss
             # Many to many
