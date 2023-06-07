@@ -81,7 +81,7 @@ def read_csv_reha(f):
             ds_massnahmeart = Massnahmeart.objects.filter(art=massnahmeart)
             if len(ds_massnahmeart) == 0:
                 # Noch nicht vorhaneden
-                ds_massnahmeart = Massnahmeart()pip 
+                ds_massnahmeart = Massnahmeart()
                 ds_massnahmeart.art = massnahmeart # type: ignore
                 ds_massnahmeart.save()
                 ds.massnahmeart = ds_massnahmeart
