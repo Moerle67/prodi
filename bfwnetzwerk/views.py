@@ -61,7 +61,7 @@ def read_csv_reha(f):
     feld_ansprechpartner2 = 13
     
 
-    Produkt.objects.all().delete()
+    # Produkt.objects.all().delete()
     with open(f, encoding='utf-8') as csvdatei:
         csv_reader_object = csv.reader(csvdatei, delimiter=';')
         zeile = 0

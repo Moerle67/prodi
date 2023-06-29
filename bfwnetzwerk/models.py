@@ -85,8 +85,8 @@ class Produkt(models.Model):
     dauer = models.CharField(verbose_name="Dauer", max_length=150)
     praxisdauer = models.CharField(verbose_name="Praxisdauer", max_length=150, blank=True)
     abschluss = models.ManyToManyField(Abschluss, verbose_name="Abschluß / Zertifikat")
-    status = models.BooleanField(verbose_name="Status")
-    dokument = models.URLField(verbose_name="Dokument", max_length=200)
+    status = models.BooleanField(verbose_name="Status", default=True)
+    dokument = models.URLField(verbose_name="Dokument", max_length=200, blank=True, null=True)
     organisation = models.ForeignKey(Organisation, verbose_name="Organisation", on_delete=models.RESTRICT)
     def __str__(self):
         return f"{self.massnahmentitel}"
