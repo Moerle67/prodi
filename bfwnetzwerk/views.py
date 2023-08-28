@@ -1,5 +1,5 @@
 # Create your views here.
-
+from django.contrib.auth.decorators import user_passes_test
 from django.http import HttpResponseRedirect
 from django.shortcuts import render
 import csv
@@ -27,7 +27,7 @@ def form1(request):
 
     return render(request, 'form1.html', {'form': form})
 
-
+@user_passes_test(lambda u: u.is_superuser) # type: ignore
 def upload_file_prod(request):
     if request.method == 'POST':
         form = UploadFileForm(request.FILES)
@@ -41,6 +41,7 @@ def upload_file_prod(request):
     else:
         form = UploadFileForm()
     return render(request, 'form1.html', {'form': form})
+
 
 def read_csv_reha(f):
     # Alle Datensätze löschen
@@ -59,9 +60,16 @@ def read_csv_reha(f):
     feld_organisation = 11
     feld_ansprechpartner = 12
     feld_ansprechpartner2 = 13
-    
+    # Datenbanken leeren
 
-    # Produkt.objects.all().delete()
+    Produkt.objects.all().delete()
+    Massnahmeart.objects.all().delete()
+    Organisation.objects.all().delete()
+    Schlagwort.objects.all().delete()
+    Abrechnungsart.objects.all().delete()
+    Kostentraeger.objects.all().delete()
+    Abschluss.objects.all().delete()
+
     with open(f, encoding='utf-8') as csvdatei:
         csv_reader_object = csv.reader(csvdatei, delimiter=';')
         zeile = 0
@@ -70,7 +78,7 @@ def read_csv_reha(f):
             if zeile == 1:
                 continue    # Überschriften
             if len(satz[0].strip()) == 0:
-               continue    # Leer Datensätze
+               continue    # Leere Datensätze
             ds = Produkt()
             
             # Maßnamentitel 
@@ -90,25 +98,13 @@ def read_csv_reha(f):
                 ds.massnahmeart = ds_massnahmeart[0]
 
             # Schlagrichtung 
-            ds.schlagrichtung = satz[feld_schlagrichtung].strip()
-   
-            # Schlagwörter
-            # Many to many
-
-            # Abrechnungsart
-            # Many to many
-
-            # Kostenträger 
-            # Many to many
+            ds.schlagrichtung = satz[feld_schlagrichtung].strip()[:240]
             
             # Dauer
             ds.dauer = satz[feld_dauer].strip()[:140]
             
             # Praxisdauer
             ds.praxisdauer = satz[feld_praxisdauer].strip()[:140]
-
-            # Abschluss
-            # Many to many
 
             # Status
             if satz[feld_status] == "aktiv":
@@ -143,18 +139,20 @@ def read_csv_reha(f):
                 # Vorhanden zuordnung des ersten Treffers
                 ds.organisation = ds_organisation[0]
             ds.save()
-
-            # Many to Many
-
+            
+            # Many to Many, DS musste einmal gespeichert sein
+   
             # Schlagwörter
+                # Many to many
             liste_schlagwoerter = satz[feld_schlagwort].split(',')
             for schlagwort in liste_schlagwoerter:
                 schlagwort = schlagwort.strip()[:240]
                 ds_schlagwort, create = Schlagwort.objects.get_or_create(schlagwort=schlagwort)
                 ds.schlagwoerter.add(ds_schlagwort)
             del liste_schlagwoerter  
-            
+
             # Abrechnungsart
+                # Many to many
             liste_abrechnungsart = satz[feld_abrechnungsart].split(',')
             for abrechnungsart in liste_abrechnungsart:
                 abrechnungsart = abrechnungsart.strip()[:240]
@@ -162,8 +160,9 @@ def read_csv_reha(f):
                 ds.abrechnungsart.add(ds_abrechnungsart)
             del liste_abrechnungsart
 
-            # Kostenträger
-            liste_kt = satz[feld_kostentraeger].split('\n')
+            # Kostenträger 
+                # Many to many
+            liste_kt = satz[feld_kostentraeger].split(',')
             for kt in liste_kt:
                 kt = kt.strip()[:240]
                 ds_kt, create = Kostentraeger.objects.get_or_create(kostentraeger=kt)
@@ -171,6 +170,7 @@ def read_csv_reha(f):
             del liste_kt
 
             # Abschluss
+            # Many to many
             liste_abschluss = satz[feld_abschluss].split('\n')
             for abschluss in liste_abschluss:
                 abschluss = abschluss.strip()[:240]
@@ -178,4 +178,4 @@ def read_csv_reha(f):
                 ds.abschluss.add(ds_abschluss)
             del liste_abschluss
 
-        print(f"Es wurden {zeile} Datensätze erfasst.")
+        print(f"Es wurden {zeile-1} Datensätze erfasst.")
