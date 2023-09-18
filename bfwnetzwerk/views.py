@@ -84,19 +84,6 @@ def read_csv_reha(f):
             # Maßnamentitel 
             ds.massnahmentitel = satz[feld_massnahmentitel].strip()[:240]
             
-            # Massnahmeart
-            massnahmeart = satz[feld_massnahmeart].strip()[:240]
-            ds_massnahmeart = Massnahmeart.objects.filter(art=massnahmeart)
-            if len(ds_massnahmeart) == 0:
-                # Noch nicht vorhaneden
-                ds_massnahmeart = Massnahmeart()
-                ds_massnahmeart.art = massnahmeart # type: ignore
-                ds_massnahmeart.save()
-                ds.massnahmeart = ds_massnahmeart
-            else:
-                # Vorhanden zuordnung des ersten Treffers
-                ds.massnahmeart = ds_massnahmeart[0]
-
             # Schlagrichtung 
             ds.schlagrichtung = satz[feld_schlagrichtung].strip()[:240]
             
@@ -141,7 +128,26 @@ def read_csv_reha(f):
             ds.save()
             
             # Many to Many, DS musste einmal gespeichert sein
-   
+
+            # Massnahmeart
+            liste_massnahmeart = satz[feld_massnahmeart].split(',')
+            for massnahmeart in liste_massnahmeart:
+                massnahmeart = massnahmeart.strip()[:240]
+                ds_massnahmeart, create = Massnahmeart.objects.get_or_create(art=massnahmeart)
+                ds.massnahmeart.add(ds_massnahmeart)
+            del liste_massnahmeart              
+            # massnahmeart = satz[feld_massnahmeart].strip()[:240]
+            # ds_massnahmeart = Massnahmeart.objects.filter(art=massnahmeart)
+            # if len(ds_massnahmeart) == 0:
+            #     # Noch nicht vorhaneden
+            #     ds_massnahmeart = Massnahmeart()
+            #     ds_massnahmeart.art = massnahmeart # type: ignore
+            #     ds_massnahmeart.save()
+            #     ds.massnahmeart = ds_massnahmeart
+            # else:
+            #     # Vorhanden zuordnung des ersten Treffers
+            #     ds.massnahmeart = ds_massnahmeart[0]
+
             # Schlagwörter
                 # Many to many
             liste_schlagwoerter = satz[feld_schlagwort].split(',')

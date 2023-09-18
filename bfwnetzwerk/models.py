@@ -77,7 +77,7 @@ class Abschluss(models.Model):
 
 class Produkt(models.Model):
     massnahmentitel = models.TextField(verbose_name=("Maßnahmentitel"))
-    massnahmeart = models.ForeignKey(Massnahmeart, verbose_name="Maßnahmenart", on_delete=models.RESTRICT)
+    massnahmeart = models.ManyToManyField(Massnahmeart, verbose_name="Maßnahmenart")
     schlagrichtung = models.TextField(verbose_name="Inhaltliche Schlagrichtung")
     schlagwoerter = models.ManyToManyField(Schlagwort, verbose_name="Schlagwörter")
     abrechnungsart = models.ManyToManyField(Abrechnungsart, verbose_name="Produkt / Abrechnungsart")
