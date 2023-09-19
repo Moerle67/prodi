@@ -5,7 +5,7 @@ from django.contrib.auth.models import User
 # Create your models here.
 class Massnahmeart(models.Model):
     art = models.CharField(verbose_name=("Kategorie"), max_length=250, primary_key=True)
-    bezeichnung = models.CharField(verbose_name=("Bezeichnung"), max_length=255, blank=True)
+    bezeichnung = models.CharField(verbose_name=("Bezeichnung"), max_length=255, blank=True, null=True)
     def __str__(self):
         return f"{self.art}"
     class Meta:
@@ -17,11 +17,11 @@ class Massnahmeart(models.Model):
 class Organisation(models.Model):
     bezeichnung = models.CharField(verbose_name=("Organisation"), max_length=255, primary_key=True)
     ansprechpartner = models.CharField(verbose_name="Ansprechpartner", max_length=100)
-    ansprechpartner_mail = models.CharField(verbose_name="Ansprechpartner Mail", max_length=50, blank=True)
-    ansprechpartner_telefon = models.CharField(verbose_name="Ansprechpartner Telefon", max_length=50, blank=True)
-    ansprechpartner2 = models.CharField(verbose_name="Ansprechpartner2", max_length=100, blank=True)
-    ansprechpartner2_mail = models.CharField(verbose_name="Ansprechpartner2 Mail", max_length=50, blank=True)
-    ansprechpartner2_telefon = models.CharField(verbose_name="Ansprechpartner2 Telefon", max_length=50, blank=True)
+    ansprechpartner_mail = models.CharField(verbose_name="Ansprechpartner Mail", max_length=50, blank=True, null=True)
+    ansprechpartner_telefon = models.CharField(verbose_name="Ansprechpartner Telefon", max_length=50, blank=True, null=True)
+    ansprechpartner2 = models.CharField(verbose_name="Ansprechpartner2", max_length=100, blank=True, null=True)
+    ansprechpartner2_mail = models.CharField(verbose_name="Ansprechpartner2 Mail", max_length=50, blank=True, null=True)
+    ansprechpartner2_telefon = models.CharField(verbose_name="Ansprechpartner2 Telefon", max_length=50, blank=True, null=True)
     def __str__(self):
         return f"{self.bezeichnung}/{self.ansprechpartner} - {self.ansprechpartner_mail}"
     class Meta:
@@ -39,7 +39,7 @@ class Schlagwort(models.Model):
 
 class Abrechnungsart(models.Model):
     kunde = models.CharField(verbose_name=("Geschäftsfeld/Kostenträger"), max_length=250, unique=True)
-    anmerkung = models.CharField(verbose_name=('Anmerkung'), max_length=250, blank=True)
+    anmerkung = models.CharField(verbose_name=('Anmerkung'), max_length=250, blank=True, null=True)
     
     def __str__(self):
         return f"{self.kunde}"
@@ -50,7 +50,7 @@ class Abrechnungsart(models.Model):
 
 class Kostentraeger(models.Model):
     kostentraeger = models.CharField(verbose_name="Kostenträger", max_length=80)
-    anmerkung = models.TextField(verbose_name="Anmerkung")
+    anmerkung = models.TextField(verbose_name="Anmerkung", blank=True, null=True)
 
     class Meta:
         verbose_name = "Kostenträger"
@@ -64,7 +64,7 @@ class Kostentraeger(models.Model):
 
 class Abschluss(models.Model):
     name = models.CharField(verbose_name="Abschluss", max_length=250)
-    bemerkung = models.TextField(verbose_name="Bemerkung")
+    bemerkung = models.TextField(verbose_name="Bemerkung", blank=True, null=True)
     class Meta:
         verbose_name = "Abschluss"
         verbose_name_plural = "Abschlüsse"
