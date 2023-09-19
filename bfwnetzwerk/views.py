@@ -44,7 +44,6 @@ def upload_file_prod(request):
 
 
 def read_csv_reha(f):
-    # Alle Datensätze löschen
     # Felder CSV
     feld_massnahmentitel = 0
     feld_massnahmeart = 1
@@ -60,15 +59,17 @@ def read_csv_reha(f):
     feld_organisation = 11
     feld_ansprechpartner = 12
     feld_ansprechpartner2 = 13
+
+    # Alle Datensätze löschen
     # Datenbanken leeren
 
-    Produkt.objects.all().delete()
-    Massnahmeart.objects.all().delete()
-    Organisation.objects.all().delete()
-    Schlagwort.objects.all().delete()
-    Abrechnungsart.objects.all().delete()
-    Kostentraeger.objects.all().delete()
-    Abschluss.objects.all().delete()
+    # Produkt.objects.all().delete()
+    # Massnahmeart.objects.all().delete()
+    # Organisation.objects.all().delete()
+    # Schlagwort.objects.all().delete()
+    # Abrechnungsart.objects.all().delete()
+    # Kostentraeger.objects.all().delete()
+    # Abschluss.objects.all().delete()
 
     with open(f, encoding='utf-8') as csvdatei:
         csv_reader_object = csv.reader(csvdatei, delimiter=';')
@@ -168,7 +169,7 @@ def read_csv_reha(f):
 
             # Kostenträger 
                 # Many to many
-            liste_kt = satz[feld_kostentraeger].split(',')
+            liste_kt = satz[feld_kostentraeger].split('\n')
             for kt in liste_kt:
                 kt = kt.strip()[:240]
                 ds_kt, create = Kostentraeger.objects.get_or_create(kostentraeger=kt)
