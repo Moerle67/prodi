@@ -49,7 +49,7 @@ class Abrechnungsart(models.Model):
         ordering = ['kunde']
 
 class Kostentraeger(models.Model):
-    kostentraeger = models.CharField(verbose_name="Kostenträger", max_length=80)
+    kostentraeger = models.CharField(verbose_name="Kostenträger", max_length=250)
     anmerkung = models.TextField(verbose_name="Anmerkung", blank=True, null=True)
 
     class Meta:
@@ -83,7 +83,7 @@ class Produkt(models.Model):
     abrechnungsart = models.ManyToManyField(Abrechnungsart, verbose_name="Produkt / Abrechnungsart")
     kostentraeger = models.ManyToManyField(Kostentraeger, verbose_name="Kostenträger")
     dauer = models.CharField(verbose_name="Dauer", max_length=150)
-    praxisdauer = models.CharField(verbose_name="Praxisdauer", max_length=150, blank=True)
+    praxisdauer = models.CharField(verbose_name="Praxisdauer", max_length=150, blank=True, null=True)
     abschluss = models.ManyToManyField(Abschluss, verbose_name="Abschluß / Zertifikat")
     status = models.BooleanField(verbose_name="Status", default=True)
     dokument = models.URLField(verbose_name="Dokument", max_length=200, blank=True, null=True)
@@ -93,5 +93,5 @@ class Produkt(models.Model):
     class Meta:
         verbose_name_plural = "Produkte"
         verbose_name = "Produkt"
- 
+
 

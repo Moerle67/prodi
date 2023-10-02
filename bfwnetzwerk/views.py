@@ -86,7 +86,7 @@ def read_csv_reha(f):
             ds.massnahmentitel = satz[feld_massnahmentitel].strip()[:240]
             
             # Schlagrichtung 
-            ds.schlagrichtung = satz[feld_schlagrichtung].strip()[:240]
+            ds.schlagrichtung = satz[feld_schlagrichtung].strip()
             
             # Dauer
             ds.dauer = satz[feld_dauer].strip()[:140]
