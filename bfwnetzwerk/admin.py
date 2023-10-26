@@ -27,5 +27,8 @@ class RehaAdmin(admin.ModelAdmin):
     filter_horizontal = ['massnahmeart','schlagwoerter','kostentraeger','abrechnungsart','abschluss']
     list_display = ['massnahmentitel', 'schlagrichtung', 'organisation']
     search_fields = ['massnahmentitel', 'schlagwoerter__schlagwort', 'schlagrichtung']
-    list_filter = ['kostentraeger', 'organisation', 'dauer', 'schlagwoerter']
+    list_filter = ['organisation', 'massnahmeart', 'abrechnungsart']
+
+      
+
 

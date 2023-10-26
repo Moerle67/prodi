@@ -27,6 +27,7 @@ class Organisation(models.Model):
     class Meta:
         verbose_name_plural = "Organisationen"
         verbose_name = "Organisation"
+        ordering = ['bezeichnung']
 
 class Schlagwort(models.Model):
     schlagwort = models.CharField(verbose_name=("Schlagwort"), max_length=250, unique=True)
@@ -93,5 +94,6 @@ class Produkt(models.Model):
     class Meta:
         verbose_name_plural = "Produkte"
         verbose_name = "Produkt"
+        ordering = ["massnahmentitel"]
 
 
