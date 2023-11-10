@@ -63,13 +63,13 @@ def read_csv_reha(f):
     # Alle Datensätze löschen
     # Datenbanken leeren
 
-    # Produkt.objects.all().delete()
-    # Massnahmeart.objects.all().delete()
-    # Organisation.objects.all().delete()
-    # Schlagwort.objects.all().delete()
-    # Abrechnungsart.objects.all().delete()
-    # Kostentraeger.objects.all().delete()
-    # Abschluss.objects.all().delete()
+    Produkt.objects.all().delete()
+    Massnahmeart.objects.all().delete()
+    Organisation.objects.all().delete()
+    Schlagwort.objects.all().delete()
+    Abrechnungsart.objects.all().delete()
+    Kostentraeger.objects.all().delete()
+    Abschluss.objects.all().delete()
 
     with open(f, encoding='utf-8') as csvdatei:
         csv_reader_object = csv.reader(csvdatei, delimiter=';')
@@ -169,7 +169,7 @@ def read_csv_reha(f):
 
             # Kostenträger 
                 # Many to many
-            liste_kt = satz[feld_kostentraeger].split('\n')
+            liste_kt = satz[feld_kostentraeger].split(',')
             for kt in liste_kt:
                 kt = kt.strip()[:240]
                 ds_kt, create = Kostentraeger.objects.get_or_create(kostentraeger=kt)
@@ -178,7 +178,7 @@ def read_csv_reha(f):
 
             # Abschluss
             # Many to many
-            liste_abschluss = satz[feld_abschluss].split('\n')
+            liste_abschluss = satz[feld_abschluss].split(',')
             for abschluss in liste_abschluss:
                 abschluss = abschluss.strip()[:240]
                 ds_abschluss, create = Abschluss.objects.get_or_create(name=abschluss)
