@@ -44,7 +44,7 @@ def upload_file_prod(request):
 
 
 def read_csv_reha(f):
-    clear_db = True ## Beim Einlesen vorher alle Datenbanken löschen
+    clear_db = False ## Beim Einlesen vorher alle Datenbanken löschen
     # Felder CSV
     feld_massnahmentitel = 0
     feld_massnahmeart = 1
