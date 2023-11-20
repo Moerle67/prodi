@@ -111,13 +111,13 @@ def read_csv_reha(f):
                 # Noch nicht vorhanden
                 ds_organisation = Organisation()
                 ds_organisation.bezeichnung = organisation
-                ap = satz[feld_ansprechpartner].split('\n')
+                ap = satz[feld_ansprechpartner].split(',')
                 if len(ap)>1:
                     ds_organisation.ansprechpartner = ap[0]
                     ds_organisation.ansprechpartner_mail = ap[1]
                     ds_organisation.ansprechpartner_telefon = ap[2] 
 
-                ap = satz[feld_ansprechpartner2].split('\n')
+                ap = satz[feld_ansprechpartner2].split(',')
                 if len(ap)>1:
                     ds_organisation.ansprechpartner2 = ap[0]
                     ds_organisation.ansprechpartner2_mail = ap[1]
