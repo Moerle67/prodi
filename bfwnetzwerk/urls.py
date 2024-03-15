@@ -3,9 +3,9 @@ from django.contrib import admin
 
 from . import views
 
-admin.site.site_header  =  "BFW Angebotsübersicht Verwaltung"  
+admin.site.site_header  =  "Produktdatenbank BFW-Netzwerk"  
 admin.site.site_title  =  "Side title"
-admin.site.index_title  =  "Datenbanken"
+admin.site.index_title  =  "Tabellen"
 
 urlpatterns = [
     path('form1', views.form1, name='index'),

@@ -56,6 +56,7 @@ class Kostentraeger(models.Model):
     class Meta:
         verbose_name = "Kostenträger"
         verbose_name_plural = "Kostenträger"
+        ordering = ['kostentraeger']
 
     def __str__(self):
         return self.kostentraeger
