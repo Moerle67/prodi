@@ -5,7 +5,7 @@ from .models import *
 
 # admin.site.register(Organisation)
 admin.site.register(Massnahmeart)
-admin.site.register(Schlagwort)
+# admin.site.register(Schlagwort)
 admin.site.register(Abrechnungsart)
 admin.site.register(Kostentraeger)
 # admin.site.register(Produkt)
@@ -29,6 +29,8 @@ class RehaAdmin(admin.ModelAdmin):
     search_fields = ['massnahmentitel', 'schlagwoerter__schlagwort', 'schlagrichtung']
     list_filter = ['organisation', 'massnahmeart', 'abrechnungsart']
 
-      
-
+@admin.register(Schlagwort)
+class SchlagwortAdminAdmin(admin.ModelAdmin):      
+   list_display = ['schlagwort']
+   search_fields = ['schlagwort']
 
